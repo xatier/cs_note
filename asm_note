@@ -144,6 +144,77 @@ operands
 
 ====================
 
+2/22
+
+instruction examples
+
+stc ; set carry flag
+inc eax ; regiser
+add ebs, ecs
+sub myByte, 25
+add eax, 36*25
+
+....
+
+INCLUDE Irvine32.inc   ; include the library
+.code ; instructions
+.data ; data segments
+
+main PROC
+    mov eax, 10000h
+    mov eax, 40000h
+    sub eax, 20000h
+    call DumpRegs
+    exit
+main ENDP
+END main              ; <----- very important
+
+keep it simple!
+
+
+flat 
+
+source code -> assembler -> object file -> linking (with libs)-> excutable
+-> OS loader
+
+defining data
+intrinsic data types
+data definition statement
+defining BYTE and SBYTE
+WORD, SWORD, DWORD, SDWORD, QWORD, TBYTE
+D for double word, Q for quadword 
+REAL4, REAL8
+Real number
+little endian order
+http://www.c-jump.com/CIS77/ASM/DataTypes/lecture.html
+
+[name] directive initalizer [, initializer]
+values1 BYPE 10
+
+? for don't care value (or uninitialized value)
+val BYTE ?, 32, 41h
+str1 BYTE "string", 0    ; <---- strings shoud be null-terminated
+
+define all strings used by your program at the same place
+(.data)
+
+use the DUP operator : counter DUP(arguments)
+Ex.   var BYTE 4 DUP("QQ")   ; "QQQQQQQQ"
+
+SDWORD and DWORD are different!
+use 2's comlement
+
+Note: little endian, reverse order byte by byte
+
+declaring uninitialized data
+
+.data?
+bigArray DWORD 5000 DUP(?) ; uninitialized data
+
+.data
+bigArray DWORD 5000 DUP (?) ; 5000 * 4
+decrease the size of the exe files
+
 
 
 
