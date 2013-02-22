@@ -1,0 +1,89 @@
+database
+    huge data
+
+data modeling
+database language
+    SQL
+
+relational database design principles
+
+filesystem organizations
+    indexing methods
+    query optimization
+transaction processing
+recovery mechanisms
+concurrency control
+
+textbook
+    database system concept 6/e
+
+grading
+    midterm, final 30/30
+    homework10
+    project 30
+	    2-3 group
+
+===
+simple banking applicatoin
+   need to store information about
+        account
+
+
+data in ASCII?
+filesystem based solution
+
+query
+    
+=====
+
+2/22
+data redundancy and inconsistency
+    no control of redundancy
+inconsistencies
+    data in different files may not agree
+    very critical issue
+
+evolution of the database is hard
+    delete? add?
+    add new filed
+
+atomicity problems
+    must be atomic!
+    can't crash during the operations
+
+concurrent(並行) access anomalies
+    來自不同的 query ，可以交錯進行
+
+data abstraction
+the key insight is data abstraction
+
+view level
+logical level
+    provide an abstraction tables
+physical level
+
+data models
+    conceptual representation of the data
+data retrieval
+    how to awk questions of the database
+    how to answer those questions
+data storage
+    how/where to store data
+    how to access it
+data integrity
+    manage crashes, concurrency
+    semantic inconsistencies
+
+reduced application development time and cost
+
+data model
+    physical data models, implementation data models, conceptual data models
+    often relations 
+    ER model, Entity–relationship model
+
+
+
+
+
+
+

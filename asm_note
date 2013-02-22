@@ -1,0 +1,155 @@
+project with openGL?
+
+fundamentals
+data transfers, addressing , arthmetic
+procedures
+conditional processing
+integer arthimetic
+advanced procedure
+strings / arrays
+midterm
+
+hw 15%
+project 15%
+mid 25%, machine test
+final 35%
+quiz 10%
+
+no discussing for late penalty for assignments and project
+
+www.cs.nctu.edu.tw/~cswingo/teaching/AssemblyLanguage
+EC 706
+mail: cswingo@cs.nctu.edu.tw
+
+textbook is important
+
+======================
+
+the difference between C code and assembly language?
+
+like to teach a baby XD
+
+    mov eax, Y
+    add eax, 4
+    mov ebx, 3
+    imul ebx
+    mov X, eax
+
+eax, register, like memorization part in your brain
+
+imul => integer (positive)
+
+asm is difficult to maintain, port to other platforms
+
+virtual machine
+    language L0, L1
+    intepretation
+    translation
+
+std::cout << (A*B +C);
+
+mov eax, A
+mul B
+add eax, C
+call WriteInt
+
+=> to intel machine language
+
+specific machine levels:
+
+    high level language
+    assembly language
+    operating system
+    instruction set architecture (ISA)
+    microarchitecture
+    hardware (digital logic)
+
+data representation
+    binary numbers
+    storage size
+    signed? unsigned?
+    character storage
+
+    
+hex!
+
+1 for true and 0 for false
+MSB most significant bit
+LSB least significant bit
+
+MSB    LSB
+10110010
+7      0
+
+decimal to binary conversion
+
+tow's complement
+
+char representation
+
+boolean algebra
+symbolic logic
+operators and truth table
+
+
+flags
+    carry, overflow, sign, zero, auxiliary carry, parity
+registers
+    e for extented
+    hi-bit, lo-bit
+    eax ... blah
+    eip instruction pointer, porgram counter
+floating point uni
+    mmx, xmm
+
+8 storage for floating numbers
+ST(0) ... ST(7)
+
+base:offset
+
+segmented memory
+
+application => OS functions => BIOS => hardware
+
+ASM can be all levels above!
+
+=====================
+
+integer constants
+hdbr
+hexadecimal, decimal, binary, encoded real
+if a value is starting by zero 0A5h => a number, not a variable
+
+quotes like python, double or single is okay
+
+MASM in appendix A
+
+identifier
+    not case sensitive
+
+instructions: label, mnemonic, opeand, comment
+[label :] mnemonic operands [;comments]
+
+labels
+L1:
+
+jump! goto!
+
+operands
+    constant, constant expression => immediate values
+    register
+    memory (data label)
+
+
+
+====================
+
+
+
+
+
+
+
+
+
+
