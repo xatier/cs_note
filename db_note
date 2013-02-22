@@ -81,9 +81,53 @@ data model
     often relations 
     ER model, Entity–relationship model
 
+conceptual data model uses
+   entity: real world object or concept
+   attribute: property of interest that further describes an antity
+   relationship: represents an interaction among the entities
+
+schema
+    descript of a database
+    specified duting database design
+    is not expected to change frequently
+    schema change
+    intension of schema
+
+schema diagram: displayed schema
+schema construct: object in the schema
+metadata: schema + constranints
+
+database state (snapshot)
+    data in the db at particular moment in time
+    current set of occurrence or instances in the DB
+    extension of schema
+
+external view => conceptual schema => internal schema => physical
+
+internal level
+    internal schema
+    describes 
+
+data independency
+    logical data independency
+        change the conceptional schema without having to
+        change external schemas or application programs
+        only the view definition & the mapping need to be changed
+    physical data independency
+
+DDL data definition language: conceptional schema
+SDL storage definition language: internal schema
+VDL view definition language: view schema
+DML data manipultaion language
+SQL = DDL + VDL + DML + contraints + schema evolution
 
 
+high level DML
+    nonprocedural, declarative
+    specifies with data to be retrieved
+    interactive or embedded in high level programming language
+    set at a time?
 
-
-
-
+    procedural
+    specifies how data to be retrieved
+    record at time
