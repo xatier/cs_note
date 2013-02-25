@@ -32,3 +32,52 @@ wifi- AP (access point)
 
 電話交換機裡面有在跑程式啊QQ
 client server 講反惹....Orz
+
+asscess to the net
+
+DSL (digital subscribe line)
+DSL modem/telephone => splitter
+    ADSL, A for Asymmetric (different upload and download rate)
+    撥接 max 56Kbps
+    DSLAM: http://en.wikipedia.org/wiki/Digital_subscriber_line_access_multiplexer
+
+    use existing telephone line to central office DSLAM
+        data => internet
+        voice => telephone net
+
+    FDM: Frequency division multiplexing
+        download often use higher frequency => higher speed rate
+
+FTTH: fiber to the home 光纖到你家w
+
+coax 同軸電纜
+HFC: hybird fiber coax
+    network of cabel, fiber attaches home to ISP router
+    光纖拉到社區箱子，然後箱子到家裡用 coax
+
+
+CMTS: http://en.wikipedia.org/wiki/Cable_modem_termination_system
+is used to provide high speed data servies such as cable Internet or VoIP to cable subbscribers
+
+NAT
+    source 會換成 private 的，出去的時候 NAT 會把 source 換成自己的對外 public IP
+    NAT 會紀錄出去的封包的 source IP (private) ，server 回封包時會把進來封包的 destination 換成 pirvate 的 IP
+
+switch 是用 MAC address (layer 2 in ISO model)
+router 是用 IP  address (layer 3 in ISO model)
+
+wiredless access networks
+    shared wireless access network connects end system to router
+
+其實現在已經有 802.11n 和  a 了XD
+wLANs / wide-area wiredless access
+
+cellular 蜂巢式網路 (telco)
+
+
+
+
+
+
+
+
