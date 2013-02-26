@@ -122,12 +122,72 @@ DML data manipultaion language
 SQL = DDL + VDL + DML + contraints + schema evolution
 
 
+DML is the most important
 high level DML
     nonprocedural, declarative
     specifies with data to be retrieved
     interactive or embedded in high level programming language
     set at a time?
 
+low level DML
     procedural
     specifies how data to be retrieved
     record at time
+
+2/26
+========
+
+DBMS interface
+    dependent on what DB you chose XD
+
+DBMS components modules
+    DDL compiler
+    Query compiler
+    Precompiler
+    DML compiler
+    Runtime db processor
+    concurrency control backup recovery subsystems
+    stored data manager
+    system catalog data dictionary
+    stored database
+
+classification of DBMS
+model
+    relational data model
+    object
+    hierachical
+    network
+user
+    single user system
+    multiuser system
+
+
+sites
+    dentralized
+    distributed
+    homogeneous
+    heterogeneous
+
+relation model
+    set
+    relation set: mathematical relation
+
+data modeling
+goals
+    conceptual representation of the data
+    reality eets "bits and bytes"
+    must make sense, and be usable by other people
+
+**entity relationship model
+relation model (note the difference)
+
+motivatoin
+
+design steps
+info
+conceptual DB design
+conceptual data model
+logical DB design
+logical data model
+physical DB design
+physical DB model
