@@ -1,0 +1,11 @@
+HDL
+    describe the design of digital systems in a textual form
+    hardware structure
+    function behavior
+    timing
+
+a documentation language for ma /machine
+used in the design flow of an integrated circuit
+    disign entry logic simulation, logic synthesis, and timing verfication
+VHDL and Verilog HDL
+

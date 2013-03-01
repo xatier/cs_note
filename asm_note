@@ -21,6 +21,7 @@ www.cs.nctu.edu.tw/~cswingo/teaching/AssemblyLanguage
 EC 706
 mail: cswingo@cs.nctu.edu.tw
 
+
 textbook is important
 
 ======================
@@ -216,11 +217,59 @@ bigArray DWORD 5000 DUP (?) ; 5000 * 4
 decrease the size of the exe files
 
 
+2/27
+===========
+if you think something is simple, you still can't learn it during few seconds.
 
 
+TITLE test_program
+INCLUDE Irvine32.inc
+
+.data
+.code
+main PROC
+    call DumpRegs
+    exit
+main ENDP
+END main
 
 
+set value correctly in the order
+
+$ current location counter
+    substract address of list
+    difference is the length
+list BYTE 10,20,30,40
+ListSize = ($ - list)
+
+divide total number of bytes b y 2 (the size of a word)
+($ - list) / 2
+
+DWORD => / 4
+
+mov edx, offset String
+
+EQU : like a macro in C, use <...> to to substitution
+
+use BYTE when defining a string (and remember the NUL at the end)
+
+TEXTEQU: text macro
+
+    也可以拿來定義小的 functions
 
 
+%(...)   ; please compute the actul value of the expression
+
+
+= use only with immediate values
+
+Register: CF: carry flag, use for check interger overflow
+
+a quiz next week! QAQ
+
+
+the direct memory operand is a named reference to storage in memory
+the named reference is automatically dereferenced buy the assembler
+'[var1]' is the the alternate format of 'var' 
 
 
