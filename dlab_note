@@ -1,3 +1,5 @@
+3/1
+======
 HDL
     describe the design of digital systems in a textual form
     hardware structure
@@ -8,4 +10,122 @@ a documentation language for ma /machine
 used in the design flow of an integrated circuit
     disign entry logic simulation, logic synthesis, and timing verfication
 VHDL and Verilog HDL
+
+specification -> RTL design and simulation -> logic synthesus -> gate level simulation
+    -> ASIC layout (like TSMC) or FPGA Implementation
+
+
+Verilog
+module declaration
+
+gate level functions
+time delay (timescale directive)
+
+tech bench for simulation
+
+naming preference: t_
+keywords: wire, reg
+unique instance name
+
+
+remember to write test bench after labs
+
+'assign' is parallel
+
+modules with boolean expressions
+
+generel rules
+
+user defined primitives (查表)
+
+bultin functions => system pre-defined primitives
+
+synthesis and HDLS
+    device independent representation of digital logic
+
+verilog code -> compilation and synthesis -> netlist -> mapping -> targets (FPGA, PAL, ASIC ...)
+
+HDL description is compiled into a netlist
+synthesis optimizes the logic
+mapping to specified platform
+
+FPGA: builtin components are called macros
+    components are not interconnect each other before synthesisation
+    macors are interconnect by synthesis tools
+
+infer macros: choose the FPGA macros that efficiently implement various parts of the HDL codes
+place and route
+    with area and/or speed in mind, choose the needed macros by location and route the interconnect
+    tools will choose macros which are close to reduce propagation delay
+
+
+modules: element or collection of lower level design blocks
+    Verilogs: interconnected modules
+    declare ane name a module, list its ports
+    comment start wih //
+    specify each port as input, output, or inout
+    behavior: each statement executes in parallel!
+
+continuous assignments: 'assign' keyword (dataflow assignment)
+    easy to represent cobinational logic
+    the taget of a continuous assignment is a net dirven by cobinational logic
+    LHS: scalar or vector net or a concatenation of scalar or vector net
+        can't be a register!
+    RHS: net or register
+    dataflow operators are fairly low-level
+        conditiona;  ? :
+        boolean logic: ~ & |
+        arithmetic: + - *
+
+Verilog supports basic logic gates as primitives
+Net represents conditions between hardware elements.
+Nets are declared with 'wire'
+
+behavior model
+procedural assignment with 'always'
+    initial, always
+    support  if, for, while, case
+    sensitivity list: any of the value inside change, the block shoult be re-run!
+    statements within the always block is ordered, that is, statements are ececuted sequentially
+    
+registers
+    in digital design (hardware viewpoint) memory elements
+    register means a variable in Verilog
+    don't need a clock and don't need to be driven like a net.
+    can be changed at any time
+
+procedural description ; continuous desciption
+
+case and if-else
+n-bit signals
+    vector
+
+ carry-in, carry-out
+
+    priority logic
+    if-else and case are interpreted very literally
+    beware of unintended priority logic
+    make sure if-clse/case are parallel
+    mutually exclusive conditions are chosen for each branch
+
+Xilinx project
+
+create project
+Top module -> HDL
+spartan3E
+不要選錯  FPGA spec
+
+add source code
+
+4-bit full adder -> 1bit 來作
+
+跑模擬
+    test fixture
+    top model  要選 4bit
+
+
+
+
+
+
 
