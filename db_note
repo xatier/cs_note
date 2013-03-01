@@ -191,3 +191,115 @@ logical DB design
 logical data model
 physical DB design
 physical DB model
+
+
+3/1
+=======
+database design concept
+
+entities
+    object :'exits' and 'distinguishable'
+    attributes
+    enrity set
+    overlap
+
+relationships
+    relate 2 or more entities
+    relationship
+    can have attributes
+    can involve more than 2 entities
+
+relationship set is a mathematical relation aong n >= 2 entities, each taken from entity sets
+    a link between entities
+
+an attribute can also be property of a relationship set
+
+ER Diagram
+    Rectangles: entities sets
+    Diamonds: relationship sets
+    Ellipses: attributes
+
+Key: some unique attribues
+    underline
+
+constraints/semantic information
+
+
+relationship cardinalties
+    representing this is important
+    better manipulation of data
+    can enforce such a constraint
+    if not represented in conceptual model, the domain knowledge may be lost
+
+mapping cardinalties
+    one 2 one   <---->
+    one 2 many  <-----
+    many 2 one  ----->
+    many 2 many ------
+    # 有箭頭方向的是 one
+
+describing binary relationship sets
+    N-ary?
+    盡量表示成二維
+
+participation of an entity set (參與)
+total participation (double line):
+    every entity in the entity set participates in at least one relationship in the relationship set
+
+partial participation
+    some entities may not participate in any relationship in the relationship set
+
+alternative notation for cadinality limits
+    1..1 -> total participation   至少是零，至多是一
+    0..* -> partial participation 可以為零，也沒有上限
+
+types of attribues
+simple and composite
+    single value? multiple value?
+    derived
+    avoid redundancy, enforcing constraints (限制)
+
+keys:
+    set of attribues that uniquely identifies an antity or a relationship
+    domain knowledge dependent
+
+superkey
+    any attribues set that can distinguish entities
+candidate key (候選人)
+    a minimal superkey
+    can't remove any attribues and preserve keyness
+    may be a set
+primary key
+    candidate key chosen as the key by DBA
+    underlined in the ER Diagram
+
+candidate ket is subset of superkey
+primary is subset of candidate
+
+relationship set key
+    兩邊的 key 拿出來，然後加上自己的 attribue
+    要可以 identify 某個 relationship
+
+recursive relationship
+    a relationship associates an entity set to itself
+
+weak entity sets
+    an entity set without enough attribues to have primary key
+    多畫幾圈(?
+    discriminator: 
+        a set of attributes that can be used to discriminate in the transaction eneity set
+
+    weak eneity sets' primary key: strong entity + discriminator attribute set
+
+design principles
+    Faithful
+    satisties the application requirements
+    models the requisite domain knowledge
+    avoid redundancy (冗餘)
+    go for simplicity
+
+design issues
+    depends on the semantics of the application
+
+
+
