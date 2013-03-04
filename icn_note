@@ -75,6 +75,67 @@ wLANs / wide-area wiredless access
 cellular 蜂巢式網路 (telco)
 
 
+3/4
+========
+packet transmission
+    transmission rate (capacity)
+    delay = L/R (length / rate)
+    propagation delay
+    guided media (一般指有線/固體的)
+        copper, fiber, coax
+	ungided media
+        radio
+    physical
+    twised pair (雙絞線)
+        two insulated copper wires
+
+    coaxial cable
+        two concentric copper conductors (一個內圈一個外圈)
+        bidirectional
+        multiple channels
+        HFC
+    fiber optic cable
+        glass fiber carring light pules
+        high speed
+        low error rate
+    repeater
+        當信號衰減時，再生信號
+    radio
+        via electromagnetic spectrum
+        terrestrial microware (=> 45Mbps)
+        Wifi (=> 54 Mbps)
+        wide-area (cellular)
+        satellite 衛星
+             270 minisecond end-end delay
+             geosynchronous (同步衛星)
+
+    packet-switching
+        hosts break application-layer messages into packets
+    forward packets from one router to next, across links on path from src to dst
+    each packet transmitted at full link capacity
+
+    store and forward
+        buffer 中接收到完整的 packet 後才 forward
+        entire packet must arrive at router befor it can be transmitted on next link
+    take L/R seconds to transmit L-bit packet into link at R bps
+    end-end delay = sum (L_i/R_i)　+ ...
+    
+    queuing and loss
+        後進來的 packet 會 queue 起來，等前面的 packet 先送出去
+        queue 滿了就 drop ^q^
+
+    routing
+        determines src-dst route taken by packets
+        forwarding
+            from input port to output port
+        source routing
+
+    circuit switching
+        先 allocate 好 end-end 完整 routing 的資源
+        reserved for 'call'
+        circuit segment idle if not used by call (no sharing)
+    http://en.wikipedia.org/wiki/Packet_switching
+    Newer mobile phone technologies (e.g., GPRS, I-mode) also use packet switching. 
 
 
 
