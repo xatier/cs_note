@@ -272,4 +272,55 @@ the direct memory operand is a named reference to storage in memory
 the named reference is automatically dereferenced buy the assembler
 '[var1]' is the the alternate format of 'var' 
 
+3/1
+=======
+use 'offset' to get the address of a variable
+mov al, var1 +4  ; the address of var1, + 4 (bytes), and get the value
+the same as mov al, [var1 + 4]
+
+[var1 + a*b]; a-> sizeof type, b-> index
+Ex. a = 2 (WORD), 
+var1 WORD 01h, 02h
+               ^^^index = 1
+
+mov
+    can't move from memory to memory
+    can't move to CS, EIP, IP
+    no immediate to segment moves
+    immediate value will be converted to the correct type by the assembler
+    immediate value cannot not be destination
+
+movzx -> zero-extension
+    add zero in front
+movsx -> sign-extension
+    convert a negative value to large size
+可以小轉大，不能大轉小(廢話XD
+    or lose som information
+
+XCHG
+    exchange two registers
+    no immediate operands are permitted
+    notice the operands' size!
+    cannot exchange two memory operands, need to mov it to some register
+
+    xchg eax, var2
+    xchg eax, var1
+    xchg eax, var2
+
+direct offset
+    plz use [var + 1] instead of var+1
+
+
+make sure to initialize register! (like 'ah')
+xor bh, bh
+notice the little endian representation 
+
+    
+
+
+
+
+
+
+
 
