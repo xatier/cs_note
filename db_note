@@ -302,4 +302,17 @@ design issues
     depends on the semantics of the application
 
 
+3/5
+=======
+entity sets vs attributes?
 
+relation data model
+    separation of logical, physical data models (data independence)
+    declarative query language
+    formal semantics
+    query optimization
+
+keys
+    integrity constaints
+    determing primary keys
+    foreign keys
