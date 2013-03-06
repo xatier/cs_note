@@ -315,12 +315,41 @@ make sure to initialize register! (like 'ah')
 xor bh, bh
 notice the little endian representation 
 
+
+3/6
+======
+review simple assembly codes
+
+add and sub
+    notice with carry flag => 負加負 -> 正www
+    overflow, sign, zero, axuiliary carry, parity
+    operand use MOV
+    remember the 'size', very important
+
+    NEG instruction
+        1 -> -1
+
+    Rval = -Xval + (Yval - Zval)
+
+    concept (page 33, state machine)
+
+    most important: ZF, SF, CF, OF
+
+inc, dec => ++ / --
+inc and dec no not affect carry flag!
+
+the CPU can not distinguish sign and unsigned
+
+the CPU just compute everything and set the flags!
+you should check the flags after every operation
+
+OF / CF
+OF: carry out of the MSB XOR carry into the MSB
+CF: carry out of the MSB
+
+
+
+
+
+
     
-
-
-
-
-
-
-
-
