@@ -138,6 +138,36 @@ packet transmission
     Newer mobile phone technologies (e.g., GPRS, I-mode) also use packet switching. 
 
 
+3/7
+======
+routing determines source destination route taken by packets
+routing algorithms
+hard beats : 確保你還活著
+
+circuit switching: no sharing
+
+packet switching 
+    resource sharing
+    simpler, don't need call setup
+
+congestion possible, congestion control
+provide circuit like behavior?
+
+Tier-1 ISP
+    pop
+
+transmission delay
+queuing delay
+    waiting at output link for transmission
+    depends on congestion for level of router
+
+nodal processing
+    check bit errors
+    determine output link
+    typically < microsec for high speed routers
+
+
+
 
 
 
