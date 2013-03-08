@@ -316,3 +316,71 @@ keys
     integrity constaints
     determing primary keys
     foreign keys
+
+3/8
+=======
+basic relational model
+
+er model -> relations
+
+convert entity sets into a relational schema with the same set of attribues
+
+at least (number of entities) tables
+
+according to the relationship cardinality -> fewer tables
+
+relation instance: the table
+
+create table
+not null
+primary key
+
+drop table
+alter table -> extend table
+
+IC integrity constranints (限制)
+    condition that must be ture for ant instance of the database
+    Eg. not null
+    domain numeric
+    check
+    constranint name (optional)
+
+Foreign keys
+Referenctial Integrity
+    不能亂 insert / delete 資料 (如果被引用到的話)
+
+cascading delete: chain reaction
+
+relation
+select
+project
+
+selection
+    SELECT * from x WHERE xxx
+    欄位不便，資料比數變少
+
+selection condition
+attribute op constant / attribute1 op attribute2
+
+projection
+    取出其中幾個欄位出來
+    降低維度
+
+compositing operations
+union
+    如同數學上的 union
+    R U S 等價 S U R
+difference
+    S-R
+
+intersection
+    交集
+
+
+基本的六個 operator # 注意！intersection 不是！！
+select
+project
+union 
+set different
+cartesian product
+rename
