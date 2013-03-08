@@ -124,7 +124,85 @@ add source code
     top model  要選 4bit
 
 
+3/8
+=========
+HDL 寫作想法跟 一般 programing 不太一樣
+Ex. don't care condition?
 
+different code (but logical equqlity) may cause different circuits by synthesis tools
+give hints to the synthesis as more as possible
+
+beware of unintended priority logic
+
+sensitivity list: 一旦其中有一個有變化的話就會跑一次 always block 裡面的東西
+
+~  bitwise not
+!  logical not
+&  reduction ( &(4'b0101) => 0 & 1 & 0 & 1 -> 1'b0 )
+comparisoin operators
+equqlity operators
+    === case inequality (compare bit by bit)
+    == equality
+
+always 裡面的  = 之  LHS, 需要用 register
+
+一個行為可以透過 gate-level / dataflow / behavior 三種來描述
+continuous assignment 'assign' (dataflow model)
+procedural assignment 'always' (behavior model), care about sensitivity list
+incomplete specification of case or if => non combinational logic
+register in verilog is not means registers in CPU
+modeling before write codes
+
+
+
+modeling styles
+    gate-level
+        good for synthesis tools (?
+    dataflow-model
+        assign
+    behavior-model
+        always
+
+當 synthesis tools 了意志... (ry
+
+
+vectors: identifiers having multiple bits widths
+bottom-up hierachical description
+
+nets
+    wire wor wand (? WTF...
+	
+wire, tri          Interconnecting wire - no special resolution function
+wor, trior         Wired outputs OR together (models ECL)
+wand, triand       Wired outputs AND together (models open-collector)
+tri0, tri1         Net pulls-down or pulls-up when not driven
+supply0, supply1   Net has a constant logic 0 or logic 1 (supply strength)
+trireg             Retains last value, when driven by z (tristate).
+
+
+repeat keyword
+
+initial -> in testbench
+$display / $write / $monitor / $time / $finish
+$write 類似 $display 不換行
+$monitor -> 像是 gdb 的 watch
+parameter
+
+filp-flop edge triggered
+latch level sensitive
+register
+
+sequential always block
+
+don't use sensitive list
+    -> posedge clk
+    -> negedge
+
+<= : sequential   // nonblocking
+= : combinational // blocking
+
+synchronous clear
+asynchronous clear => 用 sensitive list
 
 
 
