@@ -349,7 +349,26 @@ CF: carry out of the MSB
 
 
 
+3/8
+=======
+overflow (OF)
+    two positive operands are added and their sum is negative
+    two negative operands are added and their sum is positive
+
+data related operators and directive
+
+OFFSET operator: get the address => becomae typeless
 
 
+PTR
+    type casting
+    mov eax, DWOPRD PTR intArray
+TYPE -> type of something
+LENGTHOF -> number of elements
+    ($ - arr) / TYPE arr
+SIZEOF -> LENGTHOF * TYPE    in BYTES
+    ($ - arr)
 
-    
+
+indirect addressing
+    need two steps
