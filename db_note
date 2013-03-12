@@ -384,3 +384,31 @@ union
 set different
 cartesian product
 rename
+
+
+3/12
+========
+product
+想辦法使用基本的六個 operator 表示
+
+
+join
+    -> as cross-product followed by selections and sometimes with projections
+
+condition join
+
+找出全部的可能 (product) 然後  select 出特定條件
+
+Equi-join
+    join only equalities
+Natural Join
+    an Equi join on all common fields
+    if two relations have no attributes in common, the result is simple the cross-product
+division
+    consider two relations A and B
+    A has exactly two fields x and y
+    B has just one field y, with the same domin as in A
+
+
+
+
