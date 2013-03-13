@@ -372,3 +372,49 @@ SIZEOF -> LENGTHOF * TYPE    in BYTES
 
 indirect addressing
     need two steps
+
+3/13
+=======
+
+add a1, 1
+inc al      # inc may be more fast
+
+LENGTHOF number of elements
+SIZEOF   number of BYTEs
+
+indirect access  []  is typeless!
+use type cast like :  inc DWORD PTR [edx]
+
+
+mov eax, var1      ;; two lines are the same
+mov eax, [var1]
+
+;; but in this case, they are different
+mov edx, OFFSET var1
+mov ebx, [edx]     ;; get the value point by edx
+mov ebx, edx       ;; the address of var1
+
+notice the things in [], label or register
+
+indexed operand adds a constant to a register to generate an effective address
+[label + reg]
+
+offset in Bytes! notice the type!
+mov esi 0
+mov ax, [arr + esi]
+mov ax arr[esi]
+
+;; 
+arr[esi * TYPE arr]
+
+pointer variable
+
+loop lable
+
+    ecx <- ecx - 1
+    jmp to lable
+
+count down
+
+carry flag 無論退位還是進位都會亮 (borrow / carry)
+
