@@ -168,7 +168,42 @@ nodal processing
 
 
 
+3/14
+======
+
+protocols
+
+application   message
+transport     segment
+    TCP/UDP
+network       datagram
+    IP / routig protocols
+link          frame
+    ethernet, wifi ..., PPP
 
 
+Cerf and Kahn
+best effort
+decentralized control
+
+Ethernet Xerox PARC
+
+applications
+
+HTTP
+FTP
+DNS
+P2P
+
+socket programming      # suck it!
+套接字
 
 
+hackable 的 router 很好玩的，這一定有什麼誤會
+
+network apps
+run on end systems
+network core devices (routers & switches) do not run user applications
+
+client - server
+p2p
