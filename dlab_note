@@ -279,7 +279,7 @@ state register
 next-state
 
 states defined with parameter keyword
-state 
+state register defined with 
 output compbinational
 next-state logic within a combinational always block
 
