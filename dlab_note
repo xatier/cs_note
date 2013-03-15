@@ -207,3 +207,80 @@ asynchronous clear => 用 sensitive list
 
 
 
+3/15
+============
+combinational / sequential
+list / clk
+always @ (a or b or sel)    always @ (posedge clk)
+
+
+asynchromous
+always @ (negedge clearb or posedge clock)
+clearb => immediately enter the block when clearb is asserted
+
+
+blocking / nonblocking
+=   blocking eval the statements step by step
+<=  nonblocking eval all statements and do the assignment parallelly
+
+ripple counter
+    large skew
+
+74163 catalog counter
+synchronous load and clear bits
+positive edge triggered Flip flop
+parallel load date
+enable inputs: both must be asserted to enable counting
+ripple carry output (RCO) when 1111
+
+163 counter
+
+flip-flop & latches
+
+behavior modeling
+single pass behavior <- declared by initial
+    not synthesizable
+     stimute signals
+cyclic behavior <- declared by always
+
+always @ -> sensitive list
+forever -> never finnish executing
+
+
+# delay control operator
+@ event control operator
+
+jk flip flop
+
+FSM
+    finite state machines
+    each clock edge, combinational logic computes outputs
+    next state as a function of inputes and pressent state
+
+
+input -> combinational logic -> output
+      |                      |
+present state             feed back
+                             |
+clock  ->    flip-flop  <----+
+
+Moore / Mealy FSM
+Mealy is more earlier one clock than Moore.
+
+
+level to puler converter
+
+state transition diagram is a useful FSM representation
+
+state reduction
+
+FSM are eazy in Verilog (?
+state register
+next-state
+
+states defined with parameter keyword
+state 
+output compbinational
+next-state logic within a combinational always block
+
+use moore machine
