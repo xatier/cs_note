@@ -207,3 +207,15 @@ network core devices (routers & switches) do not run user applications
 
 client - server
 p2p
+
+
+3/18
+======
+wireshark demo
+沒有講好 filter QQ
+
+安安這次 C/S 架構又講對惹耶XD
+
+P2P
+    self scalability
+    peers are intermittently connected and change IP address
