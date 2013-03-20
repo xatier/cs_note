@@ -418,3 +418,36 @@ count down
 
 carry flag 無論退位還是進位都會亮 (borrow / carry)
 
+
+3/20
+==========
+save the loop-counter (ecx)in a variable @nested loop
+
+edi 有 [] 和沒有的差別
+    dereference / address
+
+cmp
+    the result will set flags
+
+j** : if xxx then jump
+comparision
+   A and B -> unsigned comparision (above / below)
+   G and L -> signed comparision (grate / large)
+
+jump based flags
+	 ZF, CF, OF, SF, PF
+
+JCXZ / JECXZ -> jump if CX = 0 / ECX = 0
+JE / JNE -> jump equal / not equal
+JE and JZ are the same thing
+
+make sure which jmp you need, signed or unsigned?
+
+GotoXY (吃 (dh, dl) (y, x))
+WriteChar
+SetTextColor (吃 al)
+
+push pop (push to stack)
+
+
+
