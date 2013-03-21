@@ -219,3 +219,46 @@ wireshark demo
 P2P
     self scalability
     peers are intermittently connected and change IP address
+
+
+3/21
+=========
+client server / p2p
+
+process communicating
+    IPC
+    message queue
+
+aside: applications with p2p architectures hve cient porcess & server processes
+
+socket
+    sent / recv
+
+
+application layer
+syntex, message semantics, rules
+
+data integrity (資料完整性)
+    reliable?
+    can tolerate(容許) some lose 
+
+timing
+    require low delay to be effective
+
+throughput
+
+security
+
+TCP / UDP
+
+reliable transport, flow control, congesion control, connection-oriented
+unreliable data transfer.
+
+簡單的說，UDP -> 射後不理
+
+
+HTTP stateless
+persistent / non-persistent
+
+
+
