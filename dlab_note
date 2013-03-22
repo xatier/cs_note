@@ -214,7 +214,7 @@ list / clk
 always @ (a or b or sel)    always @ (posedge clk)
 
 
-asynchromous
+asynchronous
 always @ (negedge clearb or posedge clock)
 clearb => immediately enter the block when clearb is asserted
 
@@ -279,8 +279,67 @@ state register
 next-state
 
 states defined with parameter keyword
-state register defined with 
-output compbinational
+state register defined with parameter keyword
+output combinational
 next-state logic within a combinational always block
 
 use moore machine
+
+
+3/22
+=============
+mealy machine VS moore machine
+
+mealy machines use less states
+
+output glitching
+combinational logic for outputs may cause this problem
+解法：先 latch 著他
+
+calculate outputs based on next status
+
+synchronous all asynchronous input
+    use two back to back registers
+
+moore function of current state
+mealy function of current state and input
+
+registers outputs combinational logic for critical signals
+skew / jitter problems
+
+
+
+registers / counters
+
+
+behavioral model
+    operations / function table
+structural level description
+    components (gates, flip-flops, MUXs)
+
+shift register
+    A_par <= {MSB_in, A_par[3:1]}   // right shift
+    A_par <= {A_par[2:0], LSB_in}   // left shift
+
+   {} : concatenation
+
+
+in practice, a designer develops only the behavioral model
+    efficiency -> maybe use structual description
+
+ripple counter
+
+
+HDL
+    description of hardwares
+    the behavior
+    cost / performance
+    hierachical building
+    easy to create very ugly code
+    is not a software programming language
+    modeling the hardware semantics
+
+
+always block
+    never mix up combinational logic and sequential logic :\
+
