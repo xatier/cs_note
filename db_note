@@ -411,4 +411,42 @@ division
 
 
 
+3/22
+============
+
+query 練習
+    and / or / not/ join
+
+the relational model has rigorously defined query languages that are simple and powerful
+relational algebra is operational useful  as an internal representation for query evaluation steps
+
+typically there are several ways of expressing a given query  a query optimizer should choose an efficient
+
+SQL string
+
+    SELECT, INSERT, UPDATE, DELETE
+
+DML, DDL, 
+data manipulation language
+    pose queries and to insert, delete, and modify rows
+data definition language
+    creation, deletion
+view -> 邏輯上的 table
+
+triggers and advanced integrity constraints
+
+embedded dynamic SQL
+    language binding
+client/server
+transaction management
+    redo / undo
+security
+
+SELECT ...(distinct) target-list FROM relation-list WHERE qualification
+
+relation-list: table? or a relation names
+target-list: a list of attributes of relations in relation-list
+
+
+找 table 然後 project 出來
 
