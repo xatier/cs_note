@@ -258,7 +258,29 @@ unreliable data transfer.
 
 
 HTTP stateless
-persistent / non-persistent
+persistent / non-persistent 
 
+
+
+3/25
+=============
+HTTP data
+    http code
+    200, 201, 300, 400, 404
+
+stateless: 我不需要記住個別 client 狀態 (效率高)
+
+cookie
+    to keep state
+    authorization
+    user session state
+
+web caches - proxy
+    object in cache: return objects
+    cache miss: request it for you
+    reduce requests to origin server
+
+conditional GET
+    don;t sent object if cache has up-to-date
 
 
