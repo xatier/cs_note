@@ -450,3 +450,34 @@ target-list: a list of attributes of relations in relation-list
 
 找 table 然後 project 出來
 
+
+3/26
+==========
+
+= 有機會可以換成  join
+
+Union
+兩個 select 的結果可以作 union
+    a 結果 or b 結果
+    -> 可以等價於 select 裡面的條件改成 or
+
+intersect: compute the intersection of any two union-compatible sets of tuples
+    可能不能換成 and (看條件)
+    有的系統可能沒有 intersect 
+
+except 除了...
+    兩集合相減的概念
+
+replace OR and AND using union/intersect
+
+nested queries
+    subquery
+
+有時直接做 join 比做  nested queries 快
+
+correlated nested queries
+
+set comparison operators
+    >, <, >=, <= ...
+    ALL
+    
