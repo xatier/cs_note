@@ -430,7 +430,7 @@ cmp
     the result will set flags
 
 j** : if xxx then jump
-comparision
+comparison
    A and B -> unsigned comparision (above / below)
    G and L -> signed comparision (grate / large)
 
@@ -448,6 +448,113 @@ WriteChar
 SetTextColor (吃 al)
 
 push pop (push to stack)
+
+
+
+3/27
+==============
+save and restore registers when they contain 
+
+sumOf PROC [USES EAX]
+    push eax
+    add eax, ebx
+    add eax, ecx
+    pop eax
+    ret
+sumOf ENDP
+
+如果有寫 USES EAX 的話，可以不寫 push, pop
+
+midterm: mid april
+
+flags
+
+inc, dec will not change CF
+
+AND dst, src
+OR dst, src
+XOR dst, src
+
+小轉大
+and al, 11011111b
+大轉小
+or al, 0010000b
+xor 直接轉
+
+
+or to set bits 4 and 5   (+= '0')
+mov al, 6
+or al, 00110000b
+'0' == 30h == 00110000h
+
+
+
+BIOS segment
+
+mov ax, 40h                         ; BIOS segment
+mov ds, ax
+mov bx, 17h                         ; keyboard flag byte
+or BYTE PTR [bx], 01000000b         ; Capslock on
+
+
+jmp to label if an integer is even
+
+mov ax, wordVAl
+and ax, 1
+jnz label
+
+
+test instruction
+
+
+jump
+jb, ja => unsigned
+jg, jl => signed
+
+
+jb, jc -> CF is set
+je, jz -> ZF iss et
+js     -> SF is set
+jne, jnz -> ZF is clear
+jexcz -> ecx = 0
+
+prior to the 386
+    jump must within -128 to + 127 from current  location counter
+    jumping destination is recorded in only one byte
+IA-32
+    32-bit offset permits jump anywhere in memory
+
+
+
+don't jump too far is you want to write good programs
+don't write too large procedures
+
+
+remember to put a 'b' in binary numbers like 1100b (12 in decimal)
+
+xor 很好用
+
+the syntax is quite strange QQ
+
+loopnz
+
+save flags
+    pushfd
+    popfd
+
+
+技巧在於 fall through 跟 Label 順序、使用之 flags
+
+there're multiple correct solutions to this problem
+
+remember the short-circuit behavior when translating pseudo codes 
+
+
+
+
+
+
+
 
 
 
