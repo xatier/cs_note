@@ -281,6 +281,85 @@ web caches - proxy
     reduce requests to origin server
 
 conditional GET
-    don;t sent object if cache has up-to-date
+    don't sent object if cache has up-to-date
+    cache: specify date of cashed copy in HTTP request
+    If-modified-since <date>
+    304 Not Modified
+
+
+3/28
+=============
+兩種解法
+    加大對外頻寬
+    架 proxy server (cheap)
+
+FTP
+    file transfer protocol
+    control connection # persistent port 21
+    data connection # non-persistent port 20
+
+    out of band (control connection 和 data connection 分開)
+    statefull
+
+E-mail
+    MUA
+    SMTP simple mail transfer protocol
+    mail server
+        mailbox, message queue
+    SMTP, TCP port 25
+    direct transfer
+
+    handshaking (greeting)
+    transfer of messages
+    closure
+
+    commands (ASCII text)
+    response
+
+    messages 7-bit ASCII (base64, quoted printable)
+
+    pull / push
+    HTTP: pull
+        each object encapsulated in its own response message
+    SMTP: push
+        multiple objects sent in multipart message
+
+    persistent connection
+    CRLF.CRLF
+    
+mail format
+header
+<blank line>
+body
+
+imap4
+    copy
+    keep in the server
+    keep user state across sessions
+pop3
+    download (and delete?)
+    download and keep
+    stateless across sessions
+
+DNS
+    distributed
+    application layer protocol
+
+    aliasing
+    single point failure
+    traffic volume
+    distant centralized database
+    maintenance
+
+
+
+
+
+
+    
+
+
+
+
 
 
