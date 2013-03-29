@@ -343,3 +343,39 @@ HDL
 always block
     never mix up combinational logic and sequential logic :\
 
+
+
+3/29
+==================
+verilog review
+    gate level
+    dataflow level
+    behavior level
+
+    always block
+    parallel!
+
+    sensitive list
+
+combinational circuit
+
+sequential circuit
+
+mealy machines / moore machines
+
+要有 circuit 在你心中 
+
+asynchronous
+
+FPGA
+    off the shelf
+    low development cost
+    short time to market
+    reconfigurability
+
+ASICs
+    high performance
+    low power
+    low cost in high volumes
+
+FPGA are perfect for rapid prototyping

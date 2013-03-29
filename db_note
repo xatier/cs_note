@@ -481,3 +481,16 @@ set comparison operators
     >, <, >=, <= ...
     ALL
     
+
+
+3/29
+============
+rewriting queries
+intersect -> in
+except -> not in
+
+division
+some functions
+    count() # 最常用來找資料的筆數
+    AVG()
+    MAX
