@@ -351,15 +351,25 @@ DNS
     distant centralized database
     maintenance
 
+4/1
+===========
 
 
+    TLD (top-level)
+    authoritative DNS
 
+    A, NS, CNAME, MX
+
+    query message / reply messages
+
+    identification
+
+    flags
+
+DDoS attacks
+spoof
+cache poisoning
+MITM
 
 
     
-
-
-
-
-
-
