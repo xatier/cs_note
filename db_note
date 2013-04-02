@@ -494,3 +494,64 @@ some functions
     count() # 最常用來找資料的筆數
     AVG()
     MAX
+
+
+4/2
+===============
+having
+    對 group 作條件限制
+SELECT "欄位1", SUM("欄位2") 
+FROM "表格名" 
+GROUP BY "欄位1" 
+HAVING (函數條件)
+被 SELECT 的只有函數欄， 那就不需要 GROUP BY 子句
+
+Ex.
+若我們要找出 Sales 大於 $1,500 的 store_name，我們就鍵入，
+SELECT store_name, SUM(sales) 
+FROM Store_Information 
+GROUP BY store_name
+HAVING SUM(sales) > 1500
+
+Aggregate (聚集) operations cannot be nested!
+
+temporary table
+
+NULL value
+    field value unknown (not been assigned yet)
+    filed attribute inapplicable
+
+Outer join
+SELECT R.sid, R.bid FROM Sailors S NATURAL LEFT OUTER JOIN Reserves R
+(sid, bid) for sailors and boats they have reserved
+保證左邊的一定要在結果的 table 中出現，沒有的話填 NULL
+
+all left relation rows appear in the result
+
+也有
+NATURAL RIGHT OUTER JOIN
+all right relation rows appear in the result
+
+
+Views
+    取代 temp table (?)
+    a view can be used just like a base table
+    view is not explicitly stored in the database
+
+    找不到 table 時別緊張，看看 view
+
+OUTER JOIN
+    FULL OUTER JOIN
+
+general constraints
+    useful when more general ICs than keys are involved
+    can use queries to express constraint.
+
+    CREATE TABLE .... CHECK (...)
+
+    保證資料欄位的合法性
+
+
+
+
+
