@@ -552,6 +552,17 @@ general constraints
     保證資料欄位的合法性
 
 
+4/9
+=========
+constraint 條件在 create table 的時候
 
+trigger example
+    event driven?
 
+unique
+
+postgre 不支援 unique
+exist, in, any, all
+
+http://carweb.cs.nctu.edu.tw/phppgadmin (ninja) (?
 
