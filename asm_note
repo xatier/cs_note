@@ -549,10 +549,83 @@ there're multiple correct solutions to this problem
 
 remember the short-circuit behavior when translating pseudo codes 
 
+4/10
+========
+
+如果不熟的話，請 practice one hundred times XD
+
+you should answer these questions very quicky
+
+remember AB for unsigned, GL for signed
+
+table driver selection
+    call NEAR PTR [ebx + 1]   ; 32 bits
+    CaseTable
+
+FSM!!!
+finite state machine
+
+sometimes the book may have some mistakes XD
 
 
+if/else Directive macros
+
+.IF eax > ebx      ; unsigned comparision!
+    mov edx, 1
+.ELSE
+    mov edx, 2
+.ENDIF
 
 
+also we have .WHILE 
+
+我們學習寫程式最大的問題是重現 bug 和 debug
+    我有 gdb 我潮強(?
+
+
+save all registers when use procedures
+    注意 registers context!
+
+
+shift
+    ; unsigned, fill zero
+    SHL   ; move MSB to CF, fill zero to LSB
+    SHR   ; fill zero to MSB, move LSB to CF
+	SAL   ; arithmetic shift (keep the MSB), (also move to CF)
+    SAR
+
+
+ROL (rotate left)
+    shift each bit to the left
+    MSB will be copied into CF and LSB
+    no bits are lost
+
+ROR (rotate right)
+
+RCL (rotate carry left)
+RCR (rotate carry right)
+	連同 CF 一起 rotate
+
+SHLD
+    shift a dst operand a given number of bits to the left
+    mov ax aaa
+    shld val, ax, 4  (shift 4 bit in ax to val)
+
+SHRD
+    shld dst, src, count
+    shrd dst, src, count
+
+
+shift multiple DWORD
+
+.data
+arrSize = 3
+arr DWORD arrSize DUP(99999999h)
+.code
+mov esi, 0
+shr arr[esi + 8], 1   ; high dword
+rcr arr[esi + 4], 1   ; middle dword, include carry
+rcr arr[esi], 1       ; low dword, include carry
 
 
 
