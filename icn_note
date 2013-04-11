@@ -372,4 +372,30 @@ cache poisoning
 MITM
 
 
-    
+4/11
+=============
+DHT
+
+circular DHT
+    O(N)
+
+mesh
+    O(lgN)
+
+circular DHT with shortcuts
+    possible to design shortcuts so O(lgN) neighbors, O(lgN) message in query
+
+
+distributed hash table
+distribe the (key, value) pair over the peers
+
+queries / insert
+
+overlay network
+
+peer churn
+
+socket programming
+
+most importantly: learnd about protocols!
+
