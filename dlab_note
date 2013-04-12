@@ -379,3 +379,127 @@ ASICs
     low cost in high volumes
 
 FPGA are perfect for rapid prototyping
+
+4/12
+==========
+review ASIC vs FPGA
+
+what is an FPGA
+    configurable logic blocks (CLB)
+    I/O blocks (IOB)
+    block RAM (BRAM)
+    Multipilers blocks
+    digital block manager (DCM)
+    ...
+
+
+4 slice each configurable logic block
+
+LUT(loop up table), MUX REG
+    carry & control
+    storage element
+
+    可以 implement 任何的 logic
+
+    LUT are primary elements for logic implementation
+    can implement any function of 4 input
+
+    兩個合起來用: 更多 bit 加上 mux (選結果)
+
+distributed RAM
+    CLB configurable as distributed RAM
+synchronous write
+synchronous / asynchronous read
+    accompanying flip-flops used for synchronous read
+
+shift register
+    dynamically addressable
+    register rich FPGA
+    當成 delay
+    data path must be balanced to keep desired functionality
+    allow for addition of pipeline stages to increase throughput
+
+
+fast carry flag
+    carry logic is independent of normal and routing resources
+
+IO blocks
+
+RAM blocks
+
+
+FPGA design flow
+    specification
+    VHDL description
+    functional simulation
+    synthesis
+    post synthesis simulation
+
+    -> make chips
+
+	synthesis -> netlist
+
+memory and programmable logic
+
+    PLA
+    PAL
+    field programmable gate array
+
+    memory address model
+    read/write operation
+
+
+memory unit access is controlled by an external device (MMU?)
+
+access time
+    required time to select a word and read it
+
+cycle time
+    required time to complete a write operation
+
+static memory / dynamic memory
+SRAM
+    information stored in latches
+    remains valid as long as power is applied
+    short read write cycle
+    like cache in our computers
+DRAM
+    information stored in the form of charges on capacitors
+    the stored charge tends to discharge with time 
+    need to be refreshed (read and write back)
+    reduced power consumption
+    large memory capacity
+
+a memory unit
+    storage components
+    the decoding circuits to select the memory word
+    a memory cell
+
+a ram of m words and n bits per word
+    m*n binary storage cells
+    need k-to-2^k decoders
+    
+    10-to-1024 can be replaced by 2*(5-to-32)
+    reduce the circuit complexity and the cycle time
+
+    reduece the number of pins in the IC packages
+
+    RAS row address strobe
+    CAS column addredd strobe
+    multiplex the address line in one set
+    more details will be in the computer architecture course
+
+
+error detection and correction
+    improve the reliability of a memory unit
+    parity bit
+    multiple parity check bits
+    the check bits generate a unique pattern, called a syndrome
+    the specific bit in error can be indentified
+
+hamming code
+    k-parity bits are add to an n-bit data word
+    2^k - 1 > n+k
+    the bit position arenumbered in dequence form 1 to n+ k
+    those positions numbered as a power of 2 are reserved for the parity
+    the remaining bits are the data bits
