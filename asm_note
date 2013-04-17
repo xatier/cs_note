@@ -631,3 +631,13 @@ rcr arr[esi], 1       ; low dword, include carry
 
 
 
+4/12
+=========
+multiple words shift
+
+shr + rcr + rcr ...
+
+multiply by 26 -> 16 + 8 + 2
+
+this is a very good exercise for you
+
