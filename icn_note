@@ -399,3 +399,135 @@ socket programming
 
 most importantly: learnd about protocols!
 
+
+4/15
+======
+chap3 ourline
+transport layer services
+
+TCP, multiplexing
+
+correction # hamming code
+
+port number
+
+encapsulation
+decapsulation
+
+
+4/17
+======
+期中筆記
+
+protocols define format, order of msgs sent and received
+among network entities, and actions taken on msg transmission, receipt
+
+ network edge:
+     hosts:clients and servers
+     servers often in data centers
+
+ access networks, physical media:
+    wired, wireless communication links
+    連外的部份
+
+ access ISPs (Internet Service Providers)
+
+
+network core:
+    interconnected routers
+    network of networks
+
+
+transmission delay = L/R 
+    packet length / transmission brate
+
+guided media
+    signals propagate in solid
+    # unguided -> 無線 (radio)
+
+
+packet-switching: hosts break application-layer messages into packets
+    forward packets from one router to the next
+    across links on path from source to destination
+    each packet transmitted at full link capacity
+
+store and forward:
+    entire packet must arrive at router before it can be transmitted on next link
+    end-end delay = 2L/R 
+
+queuing and loss:
+    packets will queue, wait to be transmitted on link
+    packets can be dropped (lost) if memory (buffer) fills up
+    packet arriving to full queue dropped
+
+routing: determines source- destination route taken by packets
+forwarding: move packets from router’s input to appropriate router output
+
+circuit switching: (no sharing) resources allocated to, reserved for “call” between source & dest
+
+
+FDM: 切頻率給不同的 channel (different users use different channels)
+TDM: 切時間片給不同的 user
+
+packet switching allows more users to use network
+
+
+dnodal = dproc + dqueue + dtrans + dprop
+dtrans = L/R
+    L: packet length (bits)
+    R: link bandwidth (bps)
+dprop = d/s
+    d: length of physical link
+    s: propagation speed in medium (~2x10^8 m/sec)
+dqueue: aL/R
+    R: link bandwidth (bps)
+    L: packet length (bits)
+    a: average packet arrival rate
+
+throughput: rate (bits/time unit) at which bits transferred between sender/receiver
+    instantaneous: rate at given point in time
+    average: rate over longer period of time
+    bit/sec
+
+
+layers: each layer implements services
+
+HTTP is "stateless"
+
+persistent HTTP
+    single connection
+
+non-persistent HTTP response time = 2RTT+ file transmission time
+
+If-modified-since:
+     <date>
+HTTP/1.0 304 Not
+     Modified
+
+FTP: out of band
+
+IMAP: keeps user state across sessions:
+POP3: download and delete/keep
+POP3 is stateless across sessions
+
+File distribution time: client-server
+Dc-s > max{NF/us,,F/dmin}
+N: file copies
+F: File size
+us: upload speed
+time to send one copy: F/us
+Ncopies -> NF/us
+dmin = min {d1, d2, ..., dN}  # download speed min
+
+
+p2p
+server transmission: must upload at least one copy
+time to send one copy: F/us
+min client download time: F/dmin
+
+
+every 30 secs: randomly select another peer, starts sending chunks
+"optimistically unchoke" this peer
+newly chosen peer may join top 4
+
+
