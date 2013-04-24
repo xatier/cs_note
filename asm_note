@@ -641,3 +641,172 @@ multiply by 26 -> 16 + 8 + 2
 
 this is a very good exercise for you
 
+
+4/24
+========
+review arithmetic operations
+
+runtime stack
+    plates are only added to the top
+    plates are only removed from the top
+    LIFO structure
+
+
+two ways of calling DumpMem
+
+pushad
+moe esi, OFFSET array
+mov ecx, LENGTHOF array
+mov ebx, TYPE array
+call DumpMem
+popad
+
+
+push TYPE array
+push LENGTHOF array
+push OFFSET, array
+call DumpMem
+
+
+nested procedure calls
+
+stack frame
+    activation record (AR)
+
+push arguments on the stack
+call procedures
+    push ebp             # base pointer
+    set ebp to esp       # stack pointer
+local variables
+    a constant is substracted from ESP to make room on the stack
+
+
+using const offset from EPB
+    [ebp+8]    # example
+
+ebp
+    base pointer
+    frame pointer
+
+don't change EBP during the procedure
+
+
+
+ret
+ret n
+
+pop stack in to the EIP/(or IP)
+
+
+.data
+sum DWORD ?
+
+.code
+    push 6
+    push 5
+    call AddTwo
+    mov sum, eax
+
+AddTwo PROC
+    push ebp           ; write down these two line at begining of the procedures
+    mov ebp, esp       ; let ebp and esp points to the same address
+
+    mov eax, [ebp+8]
+    mov ebx, [ebp+12]
+    add eax, ebx
+    
+    leave              ; restore ebp
+    ret 8              ; 8 = 4*2 (two arguments) 
+                       ; move the esp back to skip the arguments in the stack we've pushed
+AddTwo ENDP
+
+
+how to get the value of arguments in AddTwo
+    [ebp+12] -> 6
+    [ebp+8]  -> 5
+    [ebp+4]  -> return address
+
+leave instruction is the syntax sugar of 
+    mov esp, ebp           ; move esp back
+    pop ebp                ; restore ebp
+
+ret n means
+    PC 搬回去 (到你的 return address)
+    move the esp up (n bytes)
+
+ Transfers control from a procedure back to the instruction address
+        saved on the stack.  n bytes is an optional number of bytes to
+        release.  Far returns pop the IP followed by the CS, while near
+        returns pop only the IP register.
+
+
+http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
+
+
+local val:
+    [ebp-4], [ebp-8] ...
+
+要先把 esp 減掉 8
+也就是說，假裝是已經被 push 到 stack 裡面的
+
+push ebp
+move ebp, esp
+sub esp, 8
+mov [ebp-4], 0x11   ;; local
+mov [ebp-8], 0x22
+
+pass by ref
+
+arrayFill PROC
+    push ebp
+    mov ebp, esp
+    pushad
+    mov esi [ebp+12]
+    mov ecx [ebp+8]
+
+esi points to the beginning of the array
+so it's easy to use a loop to access each array element
+
+作弊寫法, masm 幫你補完
+val: DWORD
+LOCAL tmp[20]: BYTE
+
+LEA instruction
+    returns offsets of both direct and indirect operands
+
+    OFFSET only can get constant offset
+
+LEA is required when obtainning the offset of a stack parmeter or local variable
+
+CopyString PROC
+    count:DWORD
+    LOCAL temp[20]:BYTE
+
+    mov edi, OFFSET count
+    mov esi, OFFSET temp
+    lea edi, count
+    lea esi, temp
+
+...
+
+enter and leave
+enter
+    push ebp on the stack
+    set ebp to the base of the stack frame
+    reserves sace for local variable
+
+LOCAL varlist
+
+LOCAL var1: BYTE, var2: WORD, pvar3: PTR DWORD
+
+
+.MODEL
+    use flat!
+
+C
+    procedure arguments pushed on the stack in reverse order
+    call program cleans up the stack
+
+
+
+
