@@ -531,3 +531,15 @@ every 30 secs: randomly select another peer, starts sending chunks
 newly chosen peer may join top 4
 
 
+
+4/22
+=========
+TCP server
+
+UDP
+    best effort
+    no frills, bare bones
+    out of order
+    every segment are independent
+
+checksum
