@@ -566,3 +566,39 @@ exist, in, any, all
 
 http://carweb.cs.nctu.edu.tw/phppgadmin (ninja) (?
 
+4/26
+=========
+closure
+
+if AG->HI is in F+?
+    check if HI is in AG+
+
+is AG a candidate key?
+
+
+Boyce-Codd Normal Form BCNF
+R is in BCNF if for any X -> A in F
+  X->A is a trival functional dependency, A 包含於 X
+   OR
+  X is a superkey for R
+
+
+Third Normal Form 3NF
+BCNF tow rules
+or
+A is part of some key for R
+
+the definitaion of 3NF is similar to that of BDNF with the only difference being the third condition.
+
+If R is in BCNF, obviously it is in 3NF
+
+a ket for relation is a minimal set of attributes that uniquely determines all other arrtibutes
+
+decomposision
+
+lossless join decomposision
+
+canonical cover
+
+
+
