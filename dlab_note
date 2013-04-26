@@ -503,3 +503,68 @@ hamming code
     the bit position arenumbered in dequence form 1 to n+ k
     those positions numbered as a power of 2 are reserved for the parity
     the remaining bits are the data bits
+
+
+4/26
+========
+memory read/write cycle
+
+static/dynamic memory
+
+ROM
+    read only memory
+    2^k x n ROM
+    k address input lines
+    enable input
+    three state outputs
+
+    5-to-32 decoder
+    8 or gates, each has 32 inputs
+    fuses are programmable -> close or open
+
+rom = decoder + or gates
+    sum of miniterms
+    a boolean function =  sum of minitrems
+    for n-input, m-output -> 2^n X m ROM
+
+design
+    size of ROM -> truth table -> fuse pattern
+    可以先觀察 function 特性，節省不必要的 ROM
+
+
+types of ROM
+    mask programming ROM
+        IC manufacturers
+        is economical only if large quantities
+    PROM (programmable ROM)
+        fuse
+    EPROM (erasable PROM)
+        floating gate
+        ultraviolet light erasasble
+    EEPROM (electrically erasable PROM)
+        longer time is need to write
+        flash ROM
+        limited times of write operations
+
+combinational PLDs
+    (fixed AND array)decoder + or array
+    (programmable AND array) + fixed OR array
+    (prigrammable AND array) + (programmable OR array)
+
+PLA
+    AND product terms
+    OR  sum terms
+
+principle of locality
+    program access a relatively small portion of the address space at any instant of time
+
+cache
+
+temporal locality
+spatial locality
+
+
+    
+
+
+
