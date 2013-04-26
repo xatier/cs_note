@@ -543,3 +543,50 @@ UDP
     every segment are independent
 
 checksum
+
+reliable data transfer protocol
+    rdt
+
+
+
+4/25
+========
+
+reliable service
+
+sender/receiver
+
+FSM
+
+ack/nak (negative ack)
+
+explicitly tell packet errer
+
+    -> retransmit
+
+rdt 2.0
+
+every packet transmit as a FSM
+
+2.0 has a fatal flaw
+    -> no ACK/NAK (???
+    -> or duplicate ACK
+
+timeout
+seq number
+
+stop and wait
+
+
+rdt 2.1
+
+S: 4 states
+C: 2 states
+
+rdt 3.0
+timeout
+
+packets maybe lost
+
+
+
