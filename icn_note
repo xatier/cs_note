@@ -590,3 +590,29 @@ packets maybe lost
 
 
 
+
+4/29
+===========
+pipelined protocols
+Go-back-N
+    sender can have up to N unacked packets in pipeline
+    receiver only sends cumulative ack (get ack 4 means ack 1~4)
+    sender has timer for oldest unacked packet
+        timeout -> retransmit all unacked packet
+
+selective repeat
+    sender can have up to N unacked packeets in pipeline
+    receiver sends individual ack for each packet
+    sender maintains timer for each unacked packet
+
+Go-back-N
+    k-bit seq number in packet header (k-bit to represente N)
+    window size N = not yet acked + not yet send
+    may receiver duplicate ACKs (sender will ignore it)
+
+extended FSM (?)
+
+out of order pkt
+    discard no receiver buggering
+    re-ACK pkt with highest in-order seq number
+
