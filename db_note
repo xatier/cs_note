@@ -602,3 +602,46 @@ canonical cover
 
 
 
+
+4/30
+==========
+dependency set
+
+dependency preservation
+R - a relation schema
+F - set of functional dependencies on R
+{R1, R2} - a decomposition of R
+
+Fi - the set of dependencies in F involving only attributes in Ri
+Fi is called the projection of F on the set of attributes of Ri
+
+dependency is preserved if (F1 U F2)+ = F+
+
+Normalization
+    converting relations to BCNF or 3NF
+    if a relation schema is not in BCNF
+       loseless
+       未必有 dependency preservation
+    3NF  兩者都有
+
+BCNF decomposition
+    先檢查是不是 BCNF
+    suppose R is not in BCNF, A is an attribute, and X->A is a FD that violates the BDNF condition
+    1. remove A from R
+    2. decompose R into XA and R-A
+    3. repeat this untill all relations become BCNF
+
+    it is a lossless join decomposition
+    not necessary dependency preserving
+
+    X 在 XA 是 key (?
+
+    拆 table~
+
+    canonical cover
+
+    a minimal and equivalent set of functional dependency
+
+    F''' (?
+
+    先找 F''' 才能找到 3NF
