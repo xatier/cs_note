@@ -768,8 +768,8 @@ esi points to the beginning of the array
 so it's easy to use a loop to access each array element
 
 作弊寫法, masm 幫你補完
-val: DWORD
-LOCAL tmp[20]: BYTE
+val: DWORD             ; val 是參數
+LOCAL tmp[20]: BYTE    ; tmp[20] 是 local variable
 
 LEA instruction
     returns offsets of both direct and indirect operands
@@ -782,12 +782,12 @@ CopyString PROC
     count:DWORD
     LOCAL temp[20]:BYTE
 
-    mov edi, OFFSET count
-    mov esi, OFFSET temp
-    lea edi, count
-    lea esi, temp
+    mov edi, OFFSET count   ; error
+    mov esi, OFFSET temp    ; error
+    lea edi, count          ; ok
+    lea esi, temp           ; ok
 
-...
+
 
 enter and leave
 enter
@@ -815,3 +815,149 @@ C
 review
 
 no new things
+
+
+5/1
+========
+
+強哥哥：我唸書時花了三分之一的時間打電動
+
+believe in yourself!
+
+English words
+
+PROTO -> 就是定義 procedure 的 prototype
+
+OFFSET -> compile time 就要知道他的位置
+local 的 variable 在 stacke 裡面，runtime 才得知，要用 lea
+    lea edi, array   ; array 是 local 的變數 or procedure 參數
+
+LEA is required when obtaining the offset of a stack parameter or local variable
+
+[ebp+x] -> 外面 push 進來給 procedure 的
+[ebp-x] -> local variable
+
+push ebp
+mov ebp, esp
+sub esp, x     ; x 是參數大小  (in byte)
+
+之後就可以用 [ebp+x] 使用參數
+
+push parameter1
+push parameter2
+call fun
+
+; we can also use invoke
+INVOKE fun, parameter1, parameter2
+
+
+; an example of a function play with an array
+; caller
+push LANGTH myArr
+push OFFSET myArr
+call Arrayfun
+
+; callee
+Arratfun PROTO,
+    ptrArray: PTR DWORD,     ; [ebp+8]
+    szArray: DWORD           ; [ebp+12]
+
+
+stack diagram:
+
+    length      ; push LENGTHOF myArr      [ebp+12]
+    offset      ; push OFFSET myArr        [ebp+8]
+    ret addr    ; call Arrayfun            [ebp+4]
+    ebp <- esp  ; mov ebp, esp             [ebp]
+
+; simple way
+INVOKE Arrayfun, ADDR myArr, LENGTHOF myArr
+
+
+
+; the different between ADDR and OFFSET
+
+; http://www.hitxp.com/comp/pro/asm/120403.htm
+
+we always use ADDR in INVOKE, not OFFSET
+
+ADDR: returns a near or far pointer to a variable
+      flat-model: return 32-bit offset
+      ADDR and OFFSET are the same in 32-bits flat memory model
+
+SWAP PROTO,
+    a: PTR SDWORD,
+    b: PTR SDWORD,
+
+SWAP PROC,
+    a: PTR SDWORD,
+    b: PTR SDWORD
+    mov esi, a
+    mov eax, [esi]
+    mov esi, b
+    mov ebx, [esi]
+    xchg eax, ebx
+    mov esi, a
+    mov [esi], eax
+    mov esi, b
+    mov [esi], ebx
+    ret    ; 這邊不用 ret 8
+SWAP ENDP
+
+
+compute eax*36 + bx*31 in eax in 7 lines
+; assume ebx[31:16] = 0
+shl eax, 2
+mov edx, eax
+shl eax, 3
+sub eax, ebx
+shl ebx, 5
+add eax, ebx
+add eax, edx
+
+
+
+string primitive instructions
+(missed)
+
+movsd
+movsb
+movsd
+copy data from the memory location pointed to by esi to the memory pointed by edi
+only move a DWORD (?)
+
+DF direction flag
+    clear -> esi, edi inc by 1
+    w35   -> dec esi, edi by 1
+
+cld  ; direction = forward
+rep ; a repeat prefix
+rep movsd ; repeat mov until ecx is 0
+
+
+; intel++
+http://web.itu.edu.tr/kesgin/mul06/intel/index.html
+
+RTFM
+
+REP - Repeat String Operation
+
+        Usage:  REP
+        Modifies flags: None
+
+        Repeats execution of string instructions while CX != 0.  After
+        each string operation, CX is decremented and the Zero Flag is
+        tested.  The combination of a repeat prefix and a segment override
+        on CPU's before the 386 may result in errors if an interrupt occurs
+        before CX=0.  The following code shows code that is susceptible to
+        this and how to avoid it:
+
+         again:  rep movs  byte ptr ES:[DI],ES:[SI]   ; vulnerable instr.
+                     jcxz  next              ; continue if REP successful
+                     loop  again             ; interrupt goofed count
+         next:
+
+
+cmpsd ; compare DWORD
+
+
