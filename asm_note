@@ -961,3 +961,36 @@ REP - Repeat String Operation
 cmpsd ; compare DWORD
 
 
+
+5/3
+=========
+cld ; clear (0) the direction (direction = forward)
+std ; set (1) tje DF (backward)
+rep ; ecx controls the repetitions
+
+
+; these will automatically increse esi and esi
+movsb (mov [esi] to [edi] by BYTE)   ; +1
+movsw (WORD)                         ; +2
+movsd (DWORD)                        ; +4
+
+
+how easy can we read the program?
+
+
+; copying something
+.data
+src DWORD ...
+dst DWORD ...
+
+.code
+mov ecx, LAGNTHOF source
+mov esi, OFFSET src
+mov edi, OFFSET dst
+rep movsd
+
+
+cmpsb ; compare bytes
+
+repe
+
