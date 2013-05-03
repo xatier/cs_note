@@ -616,3 +616,22 @@ out of order pkt
     discard no receiver buggering
     re-ACK pkt with highest in-order seq number
 
+
+5/2
+=======
+go back N 只需要一個 timer
+
+duplicate ACK
+
+selective repeat want to improve go-back-N
+
+receiver individual ack all correctly received packets
+    buffers packets as need -> in-order
+
+sender only resends packets for which ACK not received
+    sender timer for each unACKed packet
+
+sender window
+    N consecutive seq number
+    limits seq number
+
