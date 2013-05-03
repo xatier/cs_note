@@ -564,7 +564,56 @@ temporal locality
 spatial locality
 
 
-    
+5/3
+=========
+I/O
+PS2 / UART / VGA
+
+PS/2 keyboard
+
+keyboard_clk
+scan_code [7:0]
+keyboard_data
+scan_ready
+
+
+data transfer (FPGA to VGA)
+
+put data in the ram
+
+clock 
+VGA_Red / Green / Blue
+HS   ; horizontal
+VS
+Pixel clock
+
+serial to parallel
+RS232
+
+signal protocol
+data is valid on negative edge of clock
+11-bit packet
+    start bit
+    data
+    parity bit
+    stop bit
+
+
+100 msec 會送 scancode 出去
+
+press: 11-bit code
+release: two 11-bitcodes (F0 + key)
+
+
+monochrome CRT monitor
+    horizontal, vertical scanning
+
+    hsync, vsync
+
+vga controller
+vga sync circuit
+pixel generation circuit
+
 
 
 
