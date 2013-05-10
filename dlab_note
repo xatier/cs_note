@@ -616,4 +616,53 @@ pixel generation circuit
 
 
 
+5/10
+=========
+Finite state machine
+
+divede circuit into combinational logic and state(sequential logic)
+implementation of storage elements leads to various forms of sequential logic
+
+synchronous / asynchronous sequential logic
+
+representation
+states
+    sequential storage elemtns
+    transitions (change of state)
+    clock controls when state can change by controlling storage elements
+
+inputs: sequence of input values, reset
+outputs: states
+memory: mst remember combination or always have it available as an input
+
+
+internel structure
+    data-path
+        storage for combination
+        comparasion
+    control
+        finite state machie controller
+        control of data-path
+        state changes controlled by clock
+
+moore: outputs depends on current state only
+mealy: outputs depends on current state and input state
+
+digital system is sequential logic system constructed with flip-flops and gates
+modular subsystems
+registers, decoders, multiplexers, arithmetic elements and control logic
+interconnected with data-path and control signals
+
+staement
+transfer
+
+RTL operations use a combination of behavioral and dataflow
+
+register operations - procedural assignment (edge-sensitive)
+combinational logic - level-sensitive
+
+HDL operations
+bitwise
+reduction
+
 
