@@ -635,3 +635,43 @@ sender window
     N consecutive seq number
     limits seq number
 
+
+5/9
+=========
+windows size (and sequence number)
+
+TCP overview
+point-to-point
+reliable, inorder byte stream
+pipelined
+full duplex data
+connection-oriented
+flow controlled
+
+
+TCP header
+    src port/dst post
+    seq
+    ack
+    header len/not used/UAPRSF flags/receive window
+    checksum/urgent data pointer
+    options
+    data
+
+seq number
+    byte stream number of first byte in segment's data
+ack
+    seq of next byte expected from other side
+    cumulative ACK
+
+TCP timeout value
+     longer than RTT
+
+TCP reliable control
+
+tast retransmit
+    3- duplicate ACK
+
+    3-way handshaking
+
+    
