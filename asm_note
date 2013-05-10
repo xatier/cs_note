@@ -994,3 +994,31 @@ cmpsb ; compare bytes
 
 repe
 
+
+
+5/8
+=========
+
+recall array concepts
+start + offset
+
+A + 0*S
+A[i][j] = i*N + j
+
+in asm, we need to multiply TYPESIZE of the element
+
+
+
+system software
+machine dependent/independent
+
+SIC Machine Architecture
+
+
+ 
+
+
+
+
+
+
