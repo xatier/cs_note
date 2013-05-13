@@ -1012,11 +1012,45 @@ in asm, we need to multiply TYPESIZE of the element
 system software
 machine dependent/independent
 
+
+5/10
+===============
+
 SIC Machine Architecture
 
+data formats
+    24-bits integers
+    2's complements
+    8 bit ascii code for characters
 
- 
+instruction format
+target address
 
+mode   indication  target address calculation
+direct x=0       TA=address
+indirect x=1      TA=address + (X)
+
+X denotes the content of register X
+
+load/store
+    lda, ldx, sta, stx
+conditional branches
+    comp, jlt, ...
+I/O
+    byte streams
+    RD/WD/TD
+
+SIC/XD data format
+s(1)exponent(11)fraction(36)
+exponent range: 0 to (1024*2 -1 ) = 0~2047
+f*2^(e-1024)
+
+# extent 127 like
+
+p-> program counter
+b-> base relative
+
+translate instructions to byte code (opcode)
 
 
 
