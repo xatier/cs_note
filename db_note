@@ -645,3 +645,56 @@ BCNF decomposition
     F''' (?
 
     先找 F''' 才能找到 3NF
+
+
+5/14
+==========
+disk
+why not store every thing in dist
+accessing disk page
+    seek time 
+    rotation delay
+    transfer time
+
+seek time : rotation delay : transfer time
+is about 20:10:1 (?)
+
+
+key to lower I/O cost: reduce seek/rotation delays
+
+RAID
+
+buffer management
+
+    replacement policy
+
+when a page is requested
+    dirty page
+
+predicted pages -> pre-fetch
+
+pin count
+concurrency control
+
+replacement policy : Least recently used (LRU)
+
+start + offset
+
+system catalogs
+
+fix-length / variable length
+
+what is a file?
+
+a collection of pages, each containing a collection of records.
+    insert/delete/modify
+    read a particular record
+    scan all records
+
+header page
+linked-list
+
+
+
+
+
