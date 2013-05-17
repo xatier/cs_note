@@ -666,3 +666,26 @@ bitwise
 reduction
 
 
+
+5/17
+===============
+algorithmic state machines
+    data-processing (combinational)
+    control circuits (sequential)
+        FSM
+
+3 parts of the state machine
+    state box
+    decision box
+    condition box
+
+ASM chart
+
+block diagram
+sequence of operations
+
+RTL description
+
+
+
+
