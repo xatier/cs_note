@@ -675,3 +675,43 @@ tast retransmit
     3-way handshaking
 
     
+5/16
+=========
+
+throughout
+goodput
+    goodput is the application level throughput
+    the number of useful information bits
+    delivered by the network to a certain destination, per unit of time.
+    The amount of data considered excludes protocol overhead bits as well as
+    retransmitted data packets.
+    This is related to the amount of time from the first bit of the first packet 
+    is sent (or delivered) until the last bit of the last packet is delivered, 
+
+end-end congestion dontrol
+    timeout
+    no explicit feedback from network
+    inferred from timeout/triple duplicate ACK
+
+
+network-assisted congestion control
+    single bit indicating congestion (SNA, DECbit, TCP/IP ECN, ATM)
+    explicit rate for sender to send
+
+ABR
+    available bit rate
+RM
+    resource management
+
+TCP congestion control
+    additive increase (?)
+    multiplicative derease
+    AIMD
+
+TCP slow start
+    MSS -> 1, 2, 4, 8, ...
+    summary initial rate is slow but ramps up exponentially fast
+
+
+... blahblahblah
+
