@@ -1054,5 +1054,29 @@ translate instructions to byte code (opcode)
 
 
 
+5/15
+==========
+address + 2^15
+
+0001 0000 0001 0101
+
+-1+8: 算 target code
+
+instruction format
+
+opcode x address
 
 
+SIC/XE
+#: immediate value
++: extended instruction
+@: inderect adressing
+BASE: assembler directive, inform assembler to use B as base for addressing
+NOBASE: use B for other purpose
+
+sic/xe
+一個 instruction 的 op code 是 8bit
+但是實際上是 6+2 (op+00)
+後面兩個是 n 和 i
+
+TA = PC + disslacement (offset)
