@@ -715,3 +715,21 @@ TCP slow start
 
 ... blahblahblah
 
+
+5/20
+=========
+routing algorithms
+    routing tables
+
+connection setup
+    X.25, ATM, frame relay
+    before datagrams flow, two end hosts and intervening routers establish virtual connection
+
+maximum jitter
+
+network layer service models
+
+virtual circuit
+    signaling protocols
+
+    
