@@ -694,6 +694,42 @@ a collection of pages, each containing a collection of records.
 header page
 linked-list
 
+5/21
+======
+atomicity
+consistency
+isolation
+durability
+
+
+consistency
+rest
+
+assumption and goals
+    the system can crash at any time
+    the power can go out at any point
+        contents of the memory -> bye
+    disk are durable
+
+transaction states
+    active
+    failed
+    aboard
+    partial commit
+    commit
+
+shadow copy
+
+schedule
+    serial schedule
+
+serializable
+
+
+
+
+    
+
 
 
 
