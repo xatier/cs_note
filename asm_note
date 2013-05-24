@@ -1083,11 +1083,27 @@ TA = PC + disslacement (offset)
 
 
 5/17
-
+===============
 difference between sic : sic/xe
     larger memory mode
     floating point instructions
     number of registers
+
+
+5/24
+==========
+instruction address
+opcode table
+symbol table (symbols table)
+nixbpe
+パター
+we're done
+
+header
+length of the program
+divide code into pieces
+
+
 
 
 
