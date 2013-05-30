@@ -747,3 +747,17 @@ CIDR
 
 DHCP
 
+
+5/30
+=========
+NAT
+
+address tranlstion
+
+services in NAT
+
+ICMP
+Dijkstra
+
+link state
+distance vector
