@@ -761,3 +761,19 @@ Dijkstra
 
 link state
 distance vector
+
+6/3
+=========
+
+distance vector link cost change
+
+poisoned reverse
+
+http://en.wikipedia.org/wiki/Route_poisoning
+
+comparision between link state & distrance vector
+
+reachablility?
+
+inter / exter AS routing
+
