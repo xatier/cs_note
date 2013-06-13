@@ -25,7 +25,7 @@ tech bench for simulation
 
 naming preference: t_
 keywords: wire, reg
-unique instance name
+ unique instance name
 
 
 remember to write test bench after labs

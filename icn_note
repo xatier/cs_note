@@ -777,3 +777,49 @@ reachablility?
 
 inter / exter AS routing
 
+
+
+
+6/10
+==============
+wireless
+    collision avoidance
+    RTS CTS (CSMA/CA)
+    hidden terminal problem
+
+topology
+    token ring
+    polling
+
+
+cabel access network
+CMTS
+
+channel partitioning (time/frequency or code)
+   FDM / TDM
+
+random access 
+    ALOHA, S-ALOHA, CSMA
+    CSMA/CD (Ethernet)
+    CSMA/CA (802.11)
+    carrier sensing
+
+taking turns
+    polling from central site, token passing
+    bluetooth, FDDI, token ring
+
+
+
+6/13
+=========
+ARP / rARP
+MAC
+
+arp protocol
+
+ip/mac interaction
+
+address of next connected node 
+
+frame -> next hop
+
