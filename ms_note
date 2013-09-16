@@ -1,0 +1,39 @@
+9/16
+======
+
+read the example codes
+
+89c51 single chip microprocessor
+
+ISA
+
+classify instructions
+
+pin-out assignment
+timing sequence for basic bus-operations
+
+32 pins used for I/O in 4 ports
+timing source
+ground
+reset
+
+expanding mode?
+
+EA (external access) 接 Vcc -> built-in memory
+
+General descriptions
+pin-out assignment
+built-in memory space allotment
+timing sequence in an instruction cycle
+built-in timer operations
+built-in SIO Operations
+interrupt mechanism
+instruction set
+external memory access cycle
+
+
+
+
+
+
+
