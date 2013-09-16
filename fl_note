@@ -1,0 +1,79 @@
+9/16
+======
+
+真實人生不是布袋戲
+
+莫再提計算理論...
+
+textbook:
+    Introduction to the Theory of Comutation 2/e or 3/e
+
+Automata and Langaage
+    Regular Language
+    Context-free Language
+
+computability theroy
+    Church-Turing Thesis
+    Decidablility
+    Reducibility
+    Advanced Topics in Computablility Theory
+
+complexity theory
+    time complexity
+
+Grading policy
+midterm 30%
+    Ch. 1
+midterm 30%
+    Ch. 2
+Final 40%
+    Ch. 3 4 5 7
+
+
+
+Types of Proof
+    Proof by construction
+        many theorems state that a particular type of object exists
+    Proof by contradiction (歸謬)
+        assume that the theroem is false, and then show that this assumption leads to
+        an obviously false consequence
+    Proof by induction
+        basis
+        hypothesis
+        induction step
+
+
+Regular Langauges
+    RL -> DFA -> NFA -> RE
+
+if we can find a DFA that accept all sets in  Language L, that is, L is regular
+DFA <-> NFA
+
+Deterministic finite automaton
+A DFA representing a regular language can be used either in an accepting mode to validate that
+an input string is part of the language, or in a generating mode to generate a list of all the
+strings in the language.
+
+
+Finite automata
+
+state transision table
+state diagram
+
+a deterministic finite automation is a 5-tuple (Q, sigma, delta, q0, F)
+    Q : a finite set called the states
+    Σ : a finite set called the alphabet
+    δ : Qxsigma -> Q is the transition function, exactily one resultant state
+    q0 in Q: is the start state
+    F in Q: is the set of accept states (final states)
+
+
+L(M) = A
+M recognizes A (M accepts A)
+A is the set of all strings that M accepts
+
+
+
+please show your proof clearly!
+
+RE!
