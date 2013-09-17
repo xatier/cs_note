@@ -1,0 +1,138 @@
+9/16
+=====
+grading policy
+    hw 40%
+	midterm 30%
+	final 30%
+
+
+what's an operating system?
+
+Hello, world! (as an example)
+
+application <-> hardware [ <-> user ]
+
+a program that acts as an intermediary between an application and the computer hardware
+
+context switch, mmu
+
+controls and cordinates use of hardware
+
+time slice!
+
+provides a multi-user environment
+
+cluster, distributed system
+
+clouding computing
+
+
+---
+
+for components
+hard ware
+os
+user
+applications
+
+northbridge, southbridge
+
+hi-speed / low-speed peripherals
+
+OS is a piece of program
+resource allocator!
+    decides between conflicting requests for efficient and fair resource use
+
+
+
+kernel!
+
+the one program running at all times on the computer is the kernel
+everything else is either a system program or an application
+
+C:\Windows\System32\ntoskrnl32.exe
+http://en.wikipedia.org/wiki/Ntoskrnl
+
+one or more CPUS/device controllers connect through common bus providing access to shared memory
+
+concurrent execution of CPUs and devices competing for memory cycles
+
+
+synchronization
+
+each device controller has a local buffer
+CPU moves data from/to main memory to/from device's local buffer
+memory mapping
+I/O is from the device to local buffer of controller
+interrupt!
+device controller informs CPU that is has finished its operation by causing an interrupt
+
+
+interrupt vector
+IRQ interrupt request
+
+INT instruction
+
+interrupt architecture must save the address of the interrputed instruction
+incoming interrupts are disabled while another interrupt is being processed to prevent a lost interrupt
+a trap is a software-generated interrupt caused either by an error or a user request
+an operating system is "interrupt driven"
+
+PIC controller -> timer interrupt
+
+
+http://timetobleed.com/a-few-things-you-didnt-know-about-signals-in-linux-part-1/
+
+I/O structure
+
+after I/O starts, control returns to user program only upon I/O completion
+wait instruction idles the CPU until the next interrupt
+what loop (contention for memory access)
+at most one I/O request is outstanding at a time, no simultaneous I/O processing
+
+I/O multiplexing after I/O starts, control returns to user program without waiting for I/O completion
+
+system call
+    request to the operating system to allow user to wait for I/O completion
+device status table
+
+blocking I/O or serialized I/O
+overlap or not?
+
+select fd
+
+PIO programmable I/O
+DMA (direct memory access structure)
+don't need CPU when data transfer
+
+storage structure
+main memory -> secondary storage -> magnetic disk
+NCQ native command queue
+hard disk - slow but cheap
+
+
+speed / cost / volatility
+
+caching
+
+
+storage device hierarchy
+
+important principle, performed at many levels in a computer
+single general-purpose processor
+
+parallel systems, tightly-coupled systems
+increased throughput, economy of scale, increased reliability
+graceful degradation / fault tolerance
+
+asymmetric multiprocessing / symmetric multiprocessing
+
+thread of execution
+    data movement / instruction execution cycle / DMA
+
+
+
+
+
+
+
