@@ -77,3 +77,56 @@ A is the set of all strings that M accepts
 please show your proof clearly!
 
 RE!
+
+
+
+
+9/18
+=====
+deterministric <-> non-deterministric
+
+start state will get the first alphabet of input stream
+
+delta (transision function) can be reprecented as a table
+last if the state is F (final state), then the machine accepts the input stream
+
+
+M = (Q, sigma, delta, q0, F)
+w: a string over sigma, wi in sigma
+
+M accepts w if a sequence of states r0, r1, ..., rn exists in Q and satisfies the following 3 conditions:
+    r0 = q0
+    delta(ri, wi+1) = ri+1, for i = 0..n-1
+    rn in F
+
+
+M recognizes language A if A = {w| M accepts w}
+
+definition: a language is called a regular language if some DFA recognize it (one or more)
+
+so, if we can construct a DFA that accepts L, then we can proof L is regular
+
+Q: how can we proof if L is not regular?
+
+[pumping lemma](http://en.wikipedia.org/wiki/Pumping_lemma_for_regular_languages)
+
+
+DFA: only can memorize states (limited memory)
+
+
+regular operations
+
+A, B: language
+Union, concatenation, star
+A U B = {x | x in A or x in B}
+A . B = {xy | x in A and y in B}
+A* = {x1x2x3...xk | k >= 0 and each xi in A}   # A concatenate A
+
+
+The class of regular languages is closed under the union operation
+
+
+
+
+
+
