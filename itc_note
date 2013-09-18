@@ -1,0 +1,86 @@
+9/18
+======
+
+grading policy
+    homeworks 25%
+    midterm 35%
+    final 40%
+
+[text book](http://www.amazon.com/Cryptography-Network-Security-Principles-Practice/dp/0136097049)
+
+5/e
+
+http://people.cs.nctu.edu.tw/~rjchen/Crypto2013/
+user&pswd: Crypto2013 / Crypto2013
+
+
+information theroy
+coding theory
+crypotography
+
+like probability but more boring than it Orz
+
+efficiency, error detection/correctoin, secrecy/authentication
+
+use encrypted data instead of encoded data
+
+authenticatoin: to ensure some messages are sent by somebody
+
+
+Krypto -> hidden, secret
+graphy -> writing, study
+
+
+haffman code: encoding to the frequency of characters
+
+linear coding: take a matrix to do multiplication
+
+use more bits for correction
+
+take encryption as a secure communication channel
+
+cryptology (保密學)
+
+cryptography / cryptanalysis
+密碼學/解密學
+
+symmetric-key cryptosystem
+asymmetric-key cryptosystem
+
+block cipher (塊狀加密)
+AES, DES
+
+stream cipher (串流加密)
+RC4
+
+ciphertext (密文)
+plaintext (明文)
+
+Three hard math problems
+
+factorization     n = pq
+discrete log      q^x = b mod p, find x
+closest vector of a lattice
+
+millionaires problem
+query data privately
+    send an encrypted query regarding stored data
+    get a useful concise response
+
+    I'd like search something but I don't like to let server know
+
+attribute based encryption
+
+searchable encryption
+    server gains no knowledge about keyword or the file content stored on the cloud storage
+
+
+
+learning cryptography by applications?
+
+
+
+
+
+
+
