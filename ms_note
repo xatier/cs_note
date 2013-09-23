@@ -33,6 +33,51 @@ external memory access cycle
 
 
 
+9/23
+=====
+
+各種腳位
+
+access approach (from stack)
+
+sp++ / sp--
+data_holder
+
+
+hi/lo, data pointer
+flags
+psw CPU status flags
+    carry, auxilixary carry ...
+
+需要作 combo 的話就需要 accumulator
+
+programming context
+
+general purpose registers in 4 banks
+bit map
+user's space
+special function registers
+
+TMR (timer)
+
+multi-51 system operations master/slave
+
+----
+
+assembly instruction set
+
+ADD, ADDC, SUBB, MUL, DIV, DA
+CLR, CPL, RL, RLC, RR, RRC, SWAP, INC, DEC
+MOV
+carry operations, (un)conditional jumps
+data exchange
+stack operations
+external memory access
+subroutine calls
+
+
+addressing mode
+
 
 
 
