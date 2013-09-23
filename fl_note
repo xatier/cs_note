@@ -129,4 +129,148 @@ The class of regular languages is closed under the union operation
 
 
 
+9/23
+=======
+Union, concatenation, star
 
+unreachable state -> not-optimized machine
+
+ε -> empty string
+
+A* include ε!!
+
+Proof: Union's closed property
+
+Don't assume M1 and M2
+the most important part is δ (the transition function)
+
+
+Q = {(r1, r2) | r1 in Q1 and r2 in Q2}
+Σ is the same in M1, M2
+for each (r1, r2) in Q and each a in Σ, let
+δ((r1, r2), a) = (δ(r1, a), δ(r2, a))
+# Q's next state = (r1, r2) gets an 'a', that is r1 gets 'a' and r2 gets 'a'
+# and then make them a tuple
+
+q0=(q1, q2)
+F={(r1, r2)|r1 in F1 or r2 in F2}
+
+學會懷疑
+
+
+NFA
+non-deterministric finite automata
+
+similar transition
+    when get the same input-alphabet, may have zero-or-more result
+    multiple choices
+
+ε transition
+    get 'nothing' but go through to the next state
+
+NFA 就是個 gal-game 啊XDDDDD
+    reject -> bad end
+    accept -> good end
+
+notice the ε transition!
+
+NFA may have a infinity loop, don't use DFS!
+
+你永遠跳不到 beta 世界線 *哭*
+
+同學你書念太多惹，回去休息吧！ *哭*
+
+A nondeterministic finite automaton (NFA) is a 5-tuple ( Q, Σ, δ, q0, F), where
+
+Q : a finite set of states
+Σ : a finite set of alphabet
+q0 in Q : start state
+F in Q : the set of accept states
+
+δ : QxΣ -> P(Q) transition function
+The resultant state set may contain zero, one, or more states
+
+Σε = Σ U {ε}                               # ε transition
+P(Q) : the collection of all subset of Q   # similar transition
+# here, P means powerset
+
+
+φ  in transition function means nowhere to go, that is, reject
+
+ε transition 隨意塞(?
+
+
+
+---
+
+
+
+
+Equivalence of NFA and DFA
+Every NFA has an equivalent DFA
+
+DFA 就是 NFA 的其中一個 special case
+
+trivial -> BJ4
+
+Pf. let N=( Q, Σ, δ, q0, F) be the NFA recognizing A
+goal: construct a DFA recognizing A, too
+
+** don't consider ε
+1. Q' = P(Q)           # power set of Q
+2. For R in Q' and a in Σ, let δ'(R, a) = {q in Q | q in δ(r, a), where r in R}
+   that is, δ'(R, a_ = all r in R, union δ(r, a)
+
+3. q0' = {q0}
+4. F' = {R in Q' | R contains an accept state of N}
+# 含有 NFA 中的 final state 者就把他算做是 DFA 的 final state
+
+** consider ε
+For any R in M, define
+E(R) = {q| q can be reached from R by traveling along 0 or more ε}
+δ'(R, a)={q in Q | q in E(δ(r, a)) for some r in R}
+# 透過 ε 摸的到的全部都要算
+
+change q0' to be E({q0})
+
+double checking all ε transition carefully
+
+No incoming edge, unused state -> remove
+
+其實 DFA 的集合就是把 NFA 拆開可能包含的 states
+
+
+
+-----
+
+
+closure under the regular operations
+
+
+
+
+union: 拉兩個 ε 過去 A1 和 A2
+concatenate: 把 A1 的 final states 拉 ε 過去 A2 的 start state
+star: 考慮 {} (空集合) ε 拉個 ε 到原來的 start state
+      把 A1 的 final state 拉 ε 回原來的 start state
+
+
+----
+
+Formal definition of a regular expression
+
+R is a RE if R is
+
+a in Σ
+ε
+φ
+# R1 and R2 are regular
+R1 U R2
+R1 . R2
+R1*
+
+** inductive definition
+
+R = a in Σ, L(R) = {a}
+R = ε, L(R) = {ε}
+R = φ,, L(R) = φ
