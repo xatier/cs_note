@@ -134,5 +134,102 @@ thread of execution
 
 
 
+9/24
+=======
+clustered system
+    sharing storage - storage-area network (SAN)
+    asymmetric clustering
+    symmetric clustering
+
+    high-performance computing (HPC)
+    parallelization
+
+
+boostrap program
+    ROM/EEPRPM -> firmware
+    loads operating system kernel
+    hardware provides the driving power
+    operating system bring the power to system services / applicatoins
+
+
+multiprogramming needed for efficiency
+job scheduling
+timesharing (multitasking)
+response time should be < xxx msec
+each user has at least one program executing in memory -> process
+several jobs run at the same time -> CPI scheduling
+swapping in/out
+virtual memory
+
+ex. when it has to wait (for I/O), OS switches to another job
+
+
+interrupt / exception / trap
+interrupt driven by hardware
+software error creates exception
+software request creates trap -> request for operating system service
+
+dual mode
+    user mode / kernel mode
+    privileged -> only in kernel mode
+    syscalls change mode to kernel, return from calls resets to user
+
+os needs to protect itself
+
+trap to kernel (mode bit will be changed)
+
+process management
+    a unit of work within the system
+    program is a passive entity
+    process is an active entity
+
+process needs resources to accomplish its task
+    CPU, memory, I/O
+    initialization data
+
+reclaim of any resable resources when processes terminations
+single threaded process -> PC (program counter)
+multi threaded process -> one PC per thread
+
+typically system has many processes
+concurrency by multiplexing the CPUs among the processes/threads
+
+
+suspending and resuming
+synchronization
+communication
+deadlock handling
+
+memory management
+memory allocation / free
+
+storage management
+file system management
+
+file access
+
+mass-storage
+
+storage hierarchy
+
+
+I/O subsystem
+general device-driver interface
+drivers for specific hardware devices
+
+protection and security
+uid gid
+
+
+computing environments
+
+client-server computing
+p2p
+mobile computing
+
+resource allocation
+accounting
+
+
 
 
