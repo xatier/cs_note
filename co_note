@@ -41,4 +41,62 @@ the history
 http://isca2013.eew.technion.ac.il/
 
 
+9/23
+======
 
+performance
+
+measure, report, and summarize
+response time (latency per job)
+throuphput (system performance)
+    單位時間能跑的 job 個數
+
+Elapsed time
+    counts everything (useful number, but oftern not good for comparison purposes)
+CPU time
+    doesn't count I/O and other programs
+    sustem time / user time
+our focus: user CPU time
+    time spent executing in our program
+Performance
+    performance = 1 / execution time
+
+
+cycle time
+Law of Performance
+CPI (cycle per instruction)
+MIPS
+MFLOPS
+SPECCmarks
+Benchmarks
+Averageing
+
+CPU clocking
+operation of digital hardware governed by a constant-rate clock
+
+clock frequency
+clock period
+
+cputime = time / program
+        = (instruction/program) * (cycles/instruction) * (time/cycle)
+
+
+cycletime: time/cycle
+instruction per program
+    ISA and compiler
+CPI
+    ISA and architecture
+time per cycletime -> time between ticks
+    organization, hardware, technology, layout
+
+[intel tick-tock model](http://en.wikipedia.org/wiki/Intel_Tick-Tock)
+
+
+performance depends on
+    algorithm: IC (instruction count), possibly CPI
+    programming language: IC, CPI
+    compiler: IC, CPI
+    ISA: IC, CPI, Tc
+
+
+MIPS million instruction per second
