@@ -84,3 +84,68 @@ learning cryptography by applications?
 
 
 
+9/25
+=======
+
+classical cryptography
+
+shift cipher
+substitution cipher
+Affine cipher
+Vigenere cipher
+Hill cipher
+permutation cipher
+
+cryptanalysis
+
+encrypter -> decrypter
+
+take finite set of possible plaintexts, ciphertexts
+
+congruence
+
+try all combinations in the key space
+
+π: permutation
+
+Affine Cipher
+    ax == b (mod m)
+    phi function: the number of integers in Zm that are relatively prime to m
+    relatively prime: 互質
+    phi(mn) = phi(m)phi(n) while gcd(m, n) = 1
+
+[phi function](http://en.wikipedia.org/wiki/Euler's_totient_function)
+
+prime power
+
+phi(26) = phi(2)phi(13) = 1 * 12 = 12
+
+
+[Vigenere cipher](http://en.wikipedia.org/wiki/Vigenere_cipher)
+
+substitution
+permutation
+
+
+assumption: Kerckhoff's principle
+    the opponent knows the cryptosystem being used
+
+ciphertext only attack
+known plaintext attack
+known plaintext attack
+chosen plaintext attack
+chosen ciphertext attack
+
+
+statistical -> english
+
+alphabet / digram / trigram frequency
+
+你有的條件有多少?
+
+
+
+
+
+
+
