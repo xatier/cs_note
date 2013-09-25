@@ -274,3 +274,59 @@ R1*
 R = a in Σ, L(R) = {a}
 R = ε, L(R) = {ε}
 R = φ,, L(R) = φ
+
+
+
+
+
+9/25
+=======
+
+DFA / NFA equivalent
+
+consider similar transition first, then ε transition
+
+A language is regular if and only if some regular expression describes it
+(regular language <-> regular expression <-> NFA/DFA)
+
+Lemma:
+if a language is described by a regular expression then it is regular
+
+Proof:
+let R be a regular expression describing some language A
+Goal: Convert R into an NFA N
+
+拿 element 做出 basis 的 NFA，之後套用 union / concatenate / star 串起來
+
+
+
+
+
+GNFA - generalized nondeterministic finite automaton is a 5-tuple
+
+( Q, Σ, δ, q_start, q_accept)
+
+Q is the finite set of states
+Σ is the input alphabet
+q_start is the start state
+q_accept is the accept state.
+    - exactly one accept state
+    - q_accept is not the same as q_start
+
+δ : (Q - {q_accept}) x (Q - {q_start}) -> R  # R is the set of all RE over Σ
+δ (qi, qj) = R
+
+
+Lemma:
+If a language is regular, then it is described by a regular expression
+
+Proof:
+A language L is regular -> There is a DFA M accepting L
+Goal: Convert DFAs into equivalent regular expressions
+
+
+GNFA G -> Convert -> regular expression
+Convert(G) : takes a GNFA and return an equivalent regular expression
+
+
+
