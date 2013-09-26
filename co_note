@@ -100,3 +100,90 @@ performance depends on
 
 
 MIPS million instruction per second
+
+
+
+
+9/26
+========
+
+MIPS
+
+(instruction / program) * (program / time) x 10^-6
+
+= (inst count / (exec time * 10^-6))
+= clock rate / CPI * 10^-6
+
+meaningless indicator of performance
+
+
+Ex. two compilers
+cpu cycles
+Class A: 1
+Class B: 2
+Class C: 3
+
+compiler 1: 5M class A, 1M class B, 1M class C
+compiler 2: 10M class A, 1M class B, 1M class C
+
+CPI1 = (5*1 + 1*2 + 1 * 3)/(5+1+1)
+
+MFlops: mega flops (floating point operation)
+
+
+Benchmarks
+Performance best determined by running a real application
+small benchmarks
+spec (system performance evaluation cooperative)
+
+arithmetic mean
+    means for times, CPI
+harmonic mean
+    means for rates, MIPS, MFLOPS
+geometric mean
+    normalize numbers
+
+
+算幾不等式...
+
+(a+b)/2  >   sqrt(ab)   >    2/(1/a + 1/b)
+
+算數平均會比較樂觀
+
+SPARC10
+
+
+Amdahl's Law
+
+execution time after improvement =
+execution time unaffected + (execution time affected / amount of improvement)
+
+Principle: Make the common case fast
+
+improvement to be gained from using faster mode is limited buy the fraction of the time the faster mode can be used
+
+
+power if the first class design issue
+
+manufacturing IC
+Yield: proportion of working dies per wafer
+
+
+
+----
+
+ALU
+
+number representation
+
+two's complement
+
+add/sub
+
+A - B = A + (-B) = A + B' + 1
+
+and/or/add/sub/slt
+
+
+
+
