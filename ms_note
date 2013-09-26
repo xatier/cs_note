@@ -80,5 +80,22 @@ addressing mode
 
 
 
+9/25
+=========
+
+
+add a, R0
+add A, directs
+add A, @r0
+add A, 30H
+add #30H
+
+
+ADC add and carry
+
+BCD ...
+
+machine cycle
+fetch decode excute restore
 
 
