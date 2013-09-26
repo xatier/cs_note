@@ -232,4 +232,51 @@ accounting
 
 
 
+9/26
+=======
+
+a view of operating system service
+    kernel space
+    user space
+
+
+NTDLL.DLL
+windows: some kernel ruins are in user space
+
+
+
+setuid
+
+top/passwd
+
+user interface
+
+CLI
+    shells
+
+GUI
+    user friendly desptop metaphor interface
+
+program execution
+
+PE explorer www
+
+disassemble
+
+windgb
+
+
+system call
+    programming interface to the services provided by the OS
+    most accessed by programs via a high-level application program interface API
+    Win32 API / POSIX API
+
+user mode <-> standard C library <-> kernel mode <-> write() system call
+
+
+kernel32.dll
+
+
+
+
 
