@@ -147,5 +147,18 @@ alphabet / digram / trigram frequency
 
 
 
+9/27
+=====
+vigenere cipher
 
+Kasaski test (find m only)
+Friedman test
+    - Ic(x): index of coincidence of x
+        the probability that 2 random elements of X are identical
+
+
+we need to write a program to crack Vigenere cycle
+
+
+DES
 
