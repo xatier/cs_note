@@ -99,3 +99,26 @@ machine cycle
 fetch decode excute restore
 
 
+
+
+9/30
+========
+instruction cycle
+
+first fetch, decode, second fetch, third fetch
+
+jump commands
+    target addr - PC
+    long jump
+    absolute jump
+    short jump    opcode + relative address
+
+
+conditional jump
+
+
+ACall
+
+deep nested call
+
+
