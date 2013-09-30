@@ -330,3 +330,39 @@ Convert(G) : takes a GNFA and return an equivalent regular expression
 
 
 
+
+
+
+9/30
+=======
+regular expression
+
+given a regular expression, construct a NFA that accepts it
+
+GNFA concept
+the nfa from GNFA maybe have multiple or zero final state
+
+add ε transitions in old final state(s) to the new final state
+   make exactly one final state
+
+
+
+pumping lemma
+    if A is a regular language, then there's a number P (pumping length) where
+    if s is any string in A of length >= P
+    then s may be divided into 3 pieces, satisfying some conditions
+    for each i>=0, xyiz in A
+    y's length > 0
+    xy length <= P
+
+
+if you think it's not regular, try pumping lemme lol
+
+suppose some language is regular
+let P be the pumping length
+generate a string s, that satisfying the conditions
+
+
+
+contradiction
+
