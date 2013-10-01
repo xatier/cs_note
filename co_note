@@ -187,3 +187,24 @@ and/or/add/sub/slt
 
 
 
+
+9/30
+=====
+slt
+set on less then
+
+result = 1 when (a < b)
+the last bit + a lot of 0
+
+actually, it's a subtraction
+
+EQ: a-b = 0, implies a = b
+
+
+improve adder by carry lookahead
+ripple carry adder is slow
+
+when generate carry? gi = ai & bi
+when propagate the carry? pi = ai | bi
+
+
