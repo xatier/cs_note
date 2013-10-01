@@ -280,3 +280,77 @@ kernel32.dll
 
 
 
+
+10/1
+==============
+
+API - syscall - OS relationship
+
+user space <-> syscall <-> kernel space
+
+printf() -> write()
+
+
+IA32 LSTAR
+KiSyscall64 -> the syscall entrance of Windows system
+
+Win32API
+
+unistd
+
+syscall + eax -> 實現 system call
+
+parameters pushed to the stack
+popped off the stack
+
+parameters in registers
+parameters stored in a block/table/memory
+address passed as a parameter in a register
+
+
+
+block/stack method limit?
+
+register based / stack based
+
+calling conventions
+
+ABI application binary interface
+
+
+types of syscalls
+    process control
+    file management
+    device management
+    information maintenance
+    IPC (inter-process communication)
+    protection
+
+
+MS-DOS
+    layer structure
+
+
+traditional unix system structure
+
+microkernel?
+
+
+virtual machine
+
+legacy
+
+emulator
+
+
+
+
+
+
+
+
+
+
+
+
+
