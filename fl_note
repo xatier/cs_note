@@ -366,3 +366,38 @@ generate a string s, that satisfying the conditions
 
 contradiction
 
+
+
+10/2
+===========
+
+We'll have a mid-term after Ch. 1
+Ahhhhhhhhh
+
+Pumping lemma is very important
+
+closure property in regular languages
+
+basic:
+    union
+    concatenation
+    star
+
+
+intersection
+complement
+difference
+reversal
+homomorphism
+inverse homomorphism
+
+proofs
+
+
+construct E = E1 op E2, where op = union, concatenate, star
+
+using a recursion/induction method
+
+basis, hypothesis, induction stop
+
+
