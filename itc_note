@@ -162,3 +162,53 @@ we need to write a program to crack Vigenere cycle
 
 DES
 
+
+
+10/2
+========
+vigenere cipher
+
+if m is correct, will be closed to 0.00625
+if m is incorrect, each Ic(Yi) about 1/26 = 0.038
+find m
+
+
+DES
+1973-1977
+official data encryption
+powered by IBM
+
+key space: 2^56  -> AES(2000): 2^128
+
+block size: 64bits
+
+DES is a special type of iterated cipher called a Feistel cipher
+左右打亂
+
+round function
+
+
+permutation
+
+expansion function
+
+initial permutation, inverse initial permutaion
+
+S-box -> it's a non-linear function
+    like zap a 6-bit sequence to a 4 bit sequence
+
+
+breaking DES
+Matsui linear attack
+
+double-DES ->
+    [meet in the middle attack](http://en.wikipedia.org/wiki/Meet-in-the-middle_attack)
+
+3-DES
+    Ek1(Ek2(Ek3(m)))
+    Ek1(Dk2(Ek1(m)))
+
+
+
+
+
