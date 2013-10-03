@@ -208,3 +208,39 @@ when generate carry? gi = ai & bi
 when propagate the carry? pi = ai | bi
 
 
+
+10/3
+=======
+
+zzzZZZZ
+
+multiplication
+
+Booths
+
+IEEE floating point format
+    S-Exponent-Fraction
+       8/11    23/52
+x = (-1)^s * (1+Fraction) * 2^(exponent -Bias)
+
+sign bit: 0-> non negative, 1-> negative
+normalization significand: 1.0 <= |significand| < 2.0
+
+exponent : actual exponent + Bias
+ensures exonent is unsigned
+Bias: 127/1023
+
+floating point addition
+align decimal points
+add significands
+normalize result & check for over/underflow
+
+
+
+instruction set
+
+instruction format or encoding
+    fixed, variable, or hydrid
+
+
+
