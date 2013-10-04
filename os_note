@@ -344,6 +344,54 @@ emulator
 
 
 
+10/3
+==========
+
+process concept
+
+vmmap
+
+process state
+    new, running, waiting, ready, terminated
+
+the state transiion diagram of process state
+
+I/O waiting
+scheduler dispatch
+
+process control block (PCB)
+    process state
+    program counter
+    cpu registers
+    cpu scheduling information
+    memory management information
+    accounting information I/O status information
+
+context switch
+
+
+
+job queue
+ready queue  - active
+device queue - I/O
+
+
+long term scheduler bring to ready queue
+short term schedule (CPU scheduler) # milliseconds
+midterm scheduling -> swap out
+
+I/O bound / CPU bound
+
+context
+
+
+
+
+
+
+
+
+
 
 
 
