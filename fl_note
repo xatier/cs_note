@@ -401,3 +401,62 @@ using a recursion/induction method
 basis, hypothesis, induction stop
 
 
+
+
+
+10/7
+=======
+minimizing finite automate
+Myhill-Nerode theorem
+    unique minium state DFA for every regular language
+
+table filling algorithm
+
+An X is placed in the table each time we discover a pair of states
+that cannot be equivalent.
+
+Initially, an X is placed in each entry corresponding
+to one final state and one non-final state
+
+construct a table with an entry for each pair of states
+final state and non-final states are distinguishable
+
+equivalent
+
+
+the correctness of table filling
+
+
+If two states are not distinguished by the table-
+filling algorithm, then they are equivalent
+Assume p is distinguishable from q and let x be
+the shortest string distinguishing p from p.
+
+proof: by induction on the length of x
+
+
+Decision property
+
+Theorem: The set of strings accepted by a DFA M with n states L(M) is
+    1 nonempty if and only if M accepts a string of length less than n.
+    2 infinite if and only if M accepts some strings of length l where n<=l<2n.
+
+
+proof of 1
+    right -> left is obvious
+
+    left -> right
+    let w be the shortest word in L(M), by using pumping lemma, contradiction
+
+proof of 2
+    right -> left
+    for all i, xy^iz -> L(M) is infinite
+
+    left -> right
+
+efficient decision algorithms
+
+xy^iz
+the transition diagram has a cycle (like in the pumping lemma)
+
+
