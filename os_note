@@ -389,16 +389,57 @@ context
 
 
 
+10/8
+========
+context switch
+
+context of a process represented in the PCB
+
+pid process identifier
+
+resource sharing
+execution
+    parent and children execute concurrently
+    parent waits until children terminate
+
+address space
+fork, exec
+
+abort
+
+cascading termination
+
+independent, cooperating
+    information sharing
+    computation speed up
+    modularity
+    convenience
+    shared memory
+    message passing
+
+IPC interprocess communication
+
+producer/consumer model
+
+message queue!
+
+mailbox sharing
+
+synchronization
 
 
 
+buffering
+    zero capacity
+    bounded capacity
+    unbounded capacity
 
+socket
+RPC
 
+multithreading
 
-
-
-
-
-
-
-
+responsiveness
+resource sharing
+economy
+scalability
