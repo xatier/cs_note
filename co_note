@@ -244,3 +244,54 @@ instruction format or encoding
 
 
 
+
+10/7
+==========
+
+classes of instruction operations
+
+data movement instruction
+arithmetic and logic
+branch instruction
+
+
+memory 100
+L2 10
+L1
+
+ftp id/password?
+    CO2013
+    87654321
+
+
+classifying isa by location of operations
+stack
+accumulator
+memory-memory
+register-memory
+load/store machine
+    memory operand only appears in load/store instructions
+
+
+
+
+endian convention
+endian
+aligned, misaligned
+
+ISA design principles
+
+
+MIPS
+RISC
+32-bit byte addresses
+load/store onlydisplacement
+registers
+
+3 operands machine
+    op dst, src1, src2
+
+each register contains 32-bits
+
+
+
