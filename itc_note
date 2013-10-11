@@ -225,3 +225,15 @@ authentication
 
 
 Key exchange methods
+
+
+10/9
+=========
+
+RSA
+
+algorithm for computing a^b mod n
+
+RSA solution
+extended euclid algorithm
+
