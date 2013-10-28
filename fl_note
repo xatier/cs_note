@@ -506,3 +506,29 @@ a string w is derived ambiguously in cfg if it has 2 or more leftmost derivation
 grammar is ambiguous if it generates some string ambiguously
 
 inherently ambiguous
+
+
+
+10/28
+========
+
+review midterm
+
+
+
+LL parsing
+
+look ahead skill
+
+depth first parsing with backtracking
+    
+    recursive decent parsing
+
+simple LL
+
+- all right hand sides of a non-terminal with a different terminal symbol
+
+the language is context free iff some pushdown automaton recognizes it
+
+looking at CFG rules, construct a path for nPDA
+
