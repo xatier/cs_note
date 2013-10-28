@@ -295,3 +295,21 @@ each register contains 32-bits
 
 
 
+
+
+10/28
+========
+
+pipelining
+
+parallelism improves performance
+
+5-stages pipelining: IF ID EX MEM WB
+
+add some flip-flops between stages
+
+Harvard
+    structual / control / data
+
+pipelining data path
+
