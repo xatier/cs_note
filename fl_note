@@ -532,3 +532,10 @@ the language is context free iff some pushdown automaton recognizes it
 
 looking at CFG rules, construct a path for nPDA
 
+
+
+10/13
+=========
+
+cfg -> nPDA
+
