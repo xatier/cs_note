@@ -443,3 +443,30 @@ responsiveness
 resource sharing
 economy
 scalability
+
+
+10/29
+=======
+
+spin-lock: busy waiting loop
+
+testAndSet
+
+swap instruction (xchg in x86)
+
+guarantee the operation is atomic
+
+bounded-waiting mutual exclusion
+
+mutex: sleep waiting
+
+semaphore: counting
+
+    semaphore implementation
+        block
+        wakeup
+
+
+
+
+
