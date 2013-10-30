@@ -246,3 +246,82 @@ RSA
 
 man in the middle
 
+
+10/16 cryptography
+==================
+
+[descrete log](http://en.wikipedia.org/wiki/Discrete_logarithm) problems
+
+you don't have a easy approach to solve the descrete log problems, so the algorithm is secure.
+the factorization problem is hard too.
+
+
+
+
+Elgamal cryptographic system
+
+\alpha -> a generator
+
+\alpha^(q-1) -> 1
+
+z_q* 
+
+
+random encryption
+    - if you encypt it twice, maybe the different output :~
+    - but the value of random number doesn't matter decryption
+    
+
+group/ring/field
+-----------------
+
+real number
+complex number
+
+
+inverse
+
+associate rules
+
+infinite field
+finite field
+
+
+why is Zp a field?
+
+the linear modulo equations
+
+how to find a multiplicative inverse of an integer?
+
+prime power
+
+AES: use GF(z^8) as the sbox
+
+10/18 cryptography
+============
+
+group
+do operations in field, groupm
+GF(p^k) galoa field
+polynomial
+how to find the multiplicative inverse
+
+
+
+
+10/23 crypto
+=========
+finite field
+
+- Euler's Theorem
+- Euler's Totient Function
+- Fermat's Theorem
+
+
+
+
+
+10/30
+=======
+
+AES advanced encryption standard

@@ -445,6 +445,97 @@ economy
 scalability
 
 
+
+10/17 operating system
+======================
+
+I reload the page Orz
+
+scheduler
+IRQ
+preemptive
+dispatcher
+
+
+
+dispatch latency time it takes for the dispatcher to stop one process and start another
+
+switching address space
+switching register and stack
+
+
+
+
+### scheduling criteria
+- throughput
+    + high is better
+- turnaround time
+    + lower is better
+- response time
+    + lower is beter
+- CPU utilization
+    + keep the CPU as busy as possible
+- waiting time
+    + waiting in the ready queue
+
+
+FCFS: first come, first serve
+
+
+CPU burst / IO burst switching
+
+
+
+
+FCFS convoy effect
+    poor I/O utilization
+
+SJF shortest job first
+    non-preemptive / preemptive
+
+but we don't know the real CPU burst
+shortest remaining time first (SRTF)
+
+
+
+
+how to determining the length of next cpu burst
+    - only estimate the time QQ
+
+SJF is optimal! gain in short > lost of long
+
+exponential average
+
+
+
+
+is it good enough?
+
+
+
+
+
+
+
+10/24 operating system
+==============
+
+Critical section lock
+
+out of order execution
+
+intel 64 and IA-32 arch software developer's manual
+
+atomic operations
+
+hardware syncronization
+
+atomic -> non-interruptable?
+
+
+
+
+
 10/29
 =======
 
@@ -465,6 +556,8 @@ semaphore: counting
     semaphore implementation
         block
         wakeup
+
+
 
 
 

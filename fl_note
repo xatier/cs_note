@@ -508,6 +508,14 @@ grammar is ambiguous if it generates some string ambiguously
 inherently ambiguous
 
 
+10/23 fl
+=========
+
+if a language is context free, then some PDA recognizes it
+
+
+
+
 
 10/28
 ========
@@ -534,7 +542,7 @@ looking at CFG rules, construct a path for nPDA
 
 
 
-10/13
+10/30
 =========
 
 cfg -> nPDA

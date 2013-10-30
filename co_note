@@ -293,6 +293,180 @@ registers
 
 each register contains 32-bits
 
+10/17 computer organization
+===========================
+
+constant: immediate
+
+larger constant: use more instructions
+
+lui: load upper immediate
+
+in ARM case, 
+
+    mov r0, 0x68000000
+    mov r0, 0x68, (LSL #24)
+
+take a immediate but shift some zeroes to it
+
+
+
+
+procedure calling
+-----------------
+
+    arguments
+    result values
+    temporaries
+    saved    # must be saved by callee
+
+    $gp: global pointer (reg 28)
+    $sp: stack pointer (reg 29)
+    $fp: frame pointer (reg 30)
+    $ra: return address (reg 31)
+
+
+there's no `mov` in MIPS...
+use `add 0` instead
+
+try to map each arguments in registers, reduce the usage of stack (load/store)
+
+
+arguments in `$a0, $a1 ...`
+return value in `$r0`
+
+local data allocated by callee
+procedure frame (activation record)
+
+
+
+.data
+.code
+.symbol
+
+
+
+
+----
+
+ARM instructions
+----------------
+
+
+most popular 32-bit instruction set in the world
+embedded core market
+
+typical of many modern RISC ISAs
+
+16x32-bit register file
+
+32-bit data called "word"
+register: r1-r15
+
+
+Data processing instructions
+
+opcode
+Rd destination
+Rn source
+Operand2
+immediate
+set
+condition -> reduce the usage of branches and jumps
+
+
+pipelining
+
+most constants are small
+
+nop cost in ARM
+
+
+
+----
+
+
+x86 instruction
+---------------
+
+blah
+
+
+----
+
+circuit
+-------
+
+edge-triggered clocking
+
+Latches and Flip-Flips
+- change of state
+- latches
+- flip-flop
+
+
+components for datapath
+
+- instruction fetch
+- R-type instructions
+- memory and sign extension
+
+
+
+
+the interface of R-type instructions
+
+大家有沒有注意到，這邊有個 mux ，他的意思就是選擇器
+
+
+10/21 computer organization
+===========================
+
+alu source
+
+try to trace the ALU via simple instructions
+
+memory 2 register mux
+
+register destination mux
+
+
+register file
+
+register write enable
+
+the opcode contains these enable/selection signals
+
+if we don't need L2 cache, just disable it
+
+
+
+beq instruction
+
+PC = PC + 4 is the default behavior
+
+but PC will be erased by branch instruction
+
+
+10/24 computer organization
+=========
+
+load code/target addressing
+
+# !!!
+# 10/31 CO midterm
+# !!!
+
+R-type / load / branch instructions
+
+implementing Jump
+
+
+performance of single cycle machines
+
+    - add up the path instruction passed
+
+    - Cycle time -> try to find the worst case in the circuit
 
 
 
