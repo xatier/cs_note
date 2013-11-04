@@ -547,3 +547,15 @@ looking at CFG rules, construct a path for nPDA
 
 cfg -> nPDA
 
+
+11/4
+======
+
+PDA -> cfg proof
+
+computers favor deterministric things
+
+pumping lemma for CFL
+
+    cut to 5 pieces
+
