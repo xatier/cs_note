@@ -576,6 +576,26 @@ monitors
 
 
 
+11/5
+=======
 
+Hoare Style / Mesa Style
+
+hoare style is slower
+
+bounded buffer by monitor
+
+
+solution to dining philosophers
+
+condition variable
+
+spinlocks on multiprocessor systems
+
+Linux: semaphores / spin locks
+
+deadlock
+
+process resource allocation graph
 
 
