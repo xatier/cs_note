@@ -494,3 +494,21 @@ pipelining data path
 
 data path control signals
 
+
+
+11/7
+=====
+design of pipelining
+all instructions are the same length
+just a few instruction formats, symmetry register fields
+
+
+control hazards
+
+one solution is insert some `nop`s to fit the pipeline width
+
+    - not so good (?)
+
+another solution is register renaming
+    http://en.wikipedia.org/wiki/Register_renaming
+
