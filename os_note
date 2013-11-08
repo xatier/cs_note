@@ -599,3 +599,24 @@ deadlock
 process resource allocation graph
 
 
+11/7
+======
+deadlock characterization
+
+
+    mutual exclusion
+    hold and wait
+    no preemption
+    circular wait
+
+resource allocation graph
+
+
+prevention mechanism
+    mutual exclusion
+    hold and wait
+
+deadlock avoidance
+
+    define safe state
+
