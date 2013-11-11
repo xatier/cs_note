@@ -129,3 +129,27 @@ deep nested call
 =========
 
 zzZZZ
+
+
+11/11
+=====
+
+LED
+
+why interrupts
+
+polling update
+
+there're five interrupts in 89c51
+
+int 0
+int 1
+tmr0
+tmr1
+sio
+
+
+programmable
+maskable?
+
+
