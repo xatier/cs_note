@@ -512,3 +512,15 @@ one solution is insert some `nop`s to fit the pipeline width
 another solution is register renaming
     http://en.wikipedia.org/wiki/Register_renaming
 
+
+
+11/11
+=======
+
+hazard maybe cause by data dependency
+
+hardware stall
+
+forwarding
+
+the implementation of forwarding
