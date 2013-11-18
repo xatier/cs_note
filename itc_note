@@ -350,3 +350,19 @@ ctr mode -> counter mode
 
 RC-4 cipher
 
+
+
+11/15
+=====
+
+LFSR stream cipher
+
+connection polynomial
+
+not secure :~
+
+
+nonlinear combination generators
+nonlinear filter generators
+clock-controlled generators
+
