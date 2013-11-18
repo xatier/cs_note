@@ -570,3 +570,21 @@ SLL(1)
 
 
 LL(1)
+
+
+
+11/18
+=====
+
+turing maching
+
+7-tuple
+
+current state, curret tape contents, current head location
+
+accept configuration
+decidable
+
+
+page 19 的 ㄩ 代表空白 or 結尾
+
