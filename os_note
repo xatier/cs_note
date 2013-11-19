@@ -625,3 +625,28 @@ deadlock avoidance
 ======
 resource allocation graph scheme
 
+
+11/19
+======
+
+binding of instructions and data to memory
+
+logical address / physical address
+
+mmu
+
+dynamic loading
+
+page table
+
+storage allocation problems
+
+memory fragmemtation issues -> compaction?
+
+
+paging
+
+
+
+
+
