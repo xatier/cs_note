@@ -650,3 +650,28 @@ paging
 
 
 
+
+11/21
+==========
+paging
+
+
+table + offset
+
+PTBR page table base register
+PRLR page table length register
+
+TLBs translation lock aside buffers
+ASIDs address space identifiers
+
+
+
+share pages
+memory protection
+
+
+
+
+
+
+
