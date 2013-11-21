@@ -530,3 +530,31 @@ the implementation of forwarding
 =======
 
 branch prediction
+
+
+11/21
+=====
+
+branch hazards
+
+stall
+recding branch delay b early determination of branch
+instruction schedling for branch hazard
+branch condition prediction
+    1-b buffer
+    2-b buffer
+
+moving branch decisions earlier in pipe?
+
+flush the misprediction
+
+delayed branch
+    delay slot
+
+from before branch
+from branch target
+from fall through
+
+branch target buffer
+
+
