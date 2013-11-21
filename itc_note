@@ -355,7 +355,7 @@ RC-4 cipher
 11/15
 =====
 
-LFSR stream cipher
+LFSR linear feedback stream cipher
 
 connection polynomial
 
@@ -365,4 +365,15 @@ not secure :~
 nonlinear combination generators
 nonlinear filter generators
 clock-controlled generators
+
+
+
+11/20
+=====
+
+LFSR
+
+the key point is the non-linear function
+
+h(x) is called primitive polynomial the degree m
 
