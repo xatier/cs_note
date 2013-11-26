@@ -673,5 +673,56 @@ memory protection
 
 
 
+11/26
+=====
 
+external fragmentation
+
+
+page table
+
+2^32(4G)/4KB = 1M
+
+
+2-level table is a simple technique
+we cab organize the page table to a tree structure
+
+
+the structure of the tree is documentated  in the process's spec
+
+[CR3 register](http://en.wikipedia.org/wiki/Control_register)
+
+inverted page table
+    think about the physical memory frame
+    memory frame -> page table mapping
+
+no multiple page -> one memory frame
+
+segmentation
+
+segmentation architecture
+
+
+segment number/offset
+STBR segment table base register
+STLR segment table length register
+
+
+linear addressing in Linux
+
+shared pages issues
+
+virtual memory
+
+lazy swapper?
+
+valid invalid bit
+
+page fault!
+
+performance issues about demand paging
+
+EAT -> effective access time
+
+copy on write!
 
