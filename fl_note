@@ -588,3 +588,18 @@ decidable
 
 page 19 的 ㄩ 代表空白 or 結尾
 
+
+
+11/27
+=======
+
+how powerful is a turing machine
+
+decidable / recognizable
+
+how to convert multi-tape turing machine to a single-tape turing machine
+
+    simulation
+    use a "dot" sign to mark the pointer in multi-tape machines
+
+
