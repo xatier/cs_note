@@ -377,3 +377,67 @@ the key point is the non-linear function
 
 h(x) is called primitive polynomial the degree m
 
+
+11/27
+=====
+
+mutual key
+
+master key -> long lasting
+session key -> temporary use
+
+PKI
+X.509
+
+secure only if the authenticity of the public key is assured
+
+symmetric-key
+asymmetric
+
+digital signature: hash the content and use your public key to encrypt it
+
+usually, symmetric systems are faster.
+
+manual dellivery
+
+    "physically" -> to ensure the "secure"
+
+    or sent key via third party
+
+the scale problem of keys
+
+key distribution center
+
+session key lifetime?
+
+connection oriented / connectionless
+
+
+man in the middle attack
+
+    like someone stands in front of a router
+
+public key publication
+
+X.509
+
+Y<<X>>: X is signed by Y
+
+user's cerificate is self protected
+
+PKI: public key infrastructure
+
+in rfc
+
+http://tools.ietf.org/html/rfc4949    Internet Security Glossary, Version 2
+http://tools.ietf.org/html/rfc5280    Internet X.509 Public Key Infrastructure Certificate
+
+
+
+
+
+
+
+
+
+
