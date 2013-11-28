@@ -558,3 +558,36 @@ from fall through
 branch target buffer
 
 
+
+11/28
+======
+
+design for i7 CPU
+
+L2 cache -> for core itself
+L3 cache -> sharing to 4 cores
+
+power efficiency
+
+predicated instruction: like arm
+    pipeline related ISA design
+
+
+http://www.arm.com/products/processors/technologies/biglittleprocessing.php
+
+delayed branch
+    execute instructions followed by branch instructions, then do jumping
+    advanced pipeline have long slots
+
+memory gap
+
+memory hierarchy
+
+cache line is a unit for memory fetching
+
+hits / miss
+
+   write-through / dirty
+
+
+
