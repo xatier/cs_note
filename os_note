@@ -726,3 +726,22 @@ EAT -> effective access time
 
 copy on write!
 
+
+
+11/28
+=======
+
+page fault
+
+copy on write
+
+deduplication -> merge duplicated pages
+
+swap
+
+page replacement
+
+reduce the number of page faults
+
+fifo is not a good altorithm
+
