@@ -591,3 +591,27 @@ hits / miss
 
 
 
+
+
+12/2
+======
+
+
+associative search
+
+direct mapping
+
+block address / block offset
+tag / index / offset
+
+read data from index
+
+give a cache line size, ask address
+
+4way
+8way associative (full associative)
+
+
+
+
+
