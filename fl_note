@@ -603,3 +603,42 @@ how to convert multi-tape turing machine to a single-tape turing machine
     use a "dot" sign to mark the pointer in multi-tape machines
 
 
+
+
+12/2
+=====
+
+some other Turing machine
+
+stay / multi-tape
+
+yes / no / loop (means reject)
+
+need a 3-tape Turing machine to simulate single tape non-deterministric one
+
+    using dfs approach
+    lexicographical order
+
+A language is Turing recognizable if and only if some non deterministic TM recognizes it
+A language is decidable if and only if some non deterministic TM decides it
+
+enumerator
+
+no algorithm -> no Turing Machine
+
+Yuri Matiyasevich
+
+recognizable -> decidable
+
+we have to consider the 'direction' of brute force method
+(like Zigzag)
+
+
+decidability
+
+un-solvability?
+
+regular / context free / decidable / Turing recognizable
+
+                 ------------------->
+
