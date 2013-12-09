@@ -745,3 +745,34 @@ reduce the number of page faults
 
 fifo is not a good altorithm
 
+
+
+12/3
+=====
+
+FIFO algorithm
+
+LRU algorithm
+
+Least recently used
+
+LRU + stack
+
+fixed allocation
+
+number of frames?
+
+priority allocation
+
+Thrashing
+
+    the cost of context switch
+
+locality model
+
+demand paging and thrashing
+
+sizeof locality > total memory size
+
+working set model
+
