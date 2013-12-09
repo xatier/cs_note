@@ -613,5 +613,51 @@ give a cache line size, ask address
 
 
 
+12/5
+======
+
+software solution
+   delayed branch
+   delay slots
+
+hardware solution
+    hazard detection
+
+L1 shouldn't <= 4way
+
+LRU (least recently used)
+
+locality: might accessed again soon
+    spatial locality (linear neighbors)
+    temporal locality (the same object)
+
+write through or write back?
+
+
+write through
+    write to the memory directly
+write back
+    only mark the dirty bit
+
+write buffer between cache and memory
+
+16words/block = 64Bytes/block
+
+Example: Intrinsity FastMATH
+
+AMAT
+average memory access time
+
+hit time + miss rate x miss penalty
+
+in small cache cases, block size is important
+
+
+
+
+
+
+
+
 
 
