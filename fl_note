@@ -642,3 +642,22 @@ regular / context free / decidable / Turing recognizable
 
                  ------------------->
 
+
+
+12/9
+========
+
+decidability
+
+put the problem to a Turing machine, the machine should give a answer yes or no, no loop
+
+<B, w>, where B is a DFA, w is a string
+
+simulate B with w
+
+
+Halting problem
+
+countable / uncountable
+
+mapping
