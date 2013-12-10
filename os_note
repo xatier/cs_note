@@ -776,3 +776,61 @@ sizeof locality > total memory size
 
 working set model
 
+
+
+
+12/10
+======
+
+working set
+
+memory mapped files
+somehow it's like a buffer for file I/O
+
+shared memory
+
+allocating kernel memory
+    kmalloc
+
+kernel page tables?
+
+
+buddy system
+
+    buddy system allocator
+    using power of 2 (but will waste some memory)
+    allocate a 24K memory
+        256 -> 128 + 128 -> 64 + 64 -> 32 + 32
+
+    return a 32k block
+
+    implement as a linked list
+
+    log n
+
+    constant overhead is low on practice
+    external fregmentation is good, but not good in internal fragmentation
+    like i need a 129K block but allocate a 256K block
+
+    /proc/buddyinfo in Linux
+
+
+slab allocator
+
+    vmalloc // paging allocation in Linux kernel
+
+
+vmalloc() is very rarely used, because the kernel rarely uses virtual memory.
+kmalloc() is what is typically used, but you have to know what the consequences of the different flags are and you need a strategy for dealing with what happens when it fails - particularly if you're in an interrupt handler, like you suggested.
+
+prepaging
+
+    the cost of prepaging can't greater than normal paging
+
+TLB reach
+TLB size
+page size
+
+
+
+
