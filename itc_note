@@ -435,6 +435,24 @@ http://tools.ietf.org/html/rfc5280    Internet X.509 Public Key Infrastructure C
 
 
 
+12/11
+======
+
+HMAC, H is the hash function
+DAA -> zero padding cause collision
+CMAC -> cipher-bases message authentication code using 100000 padding
+
+AE: authentication encryption
+
+Hash theb encrypt? MAC then encrypt?
+
+SSL/TLS use MAC then encrypt
+
+GMAC -> G for Galois
+
+GHMAC .... WTF?
+
+
 
 
 
