@@ -656,8 +656,20 @@ in small cache cases, block size is important
 
 
 
+12/16
+=====
 
 
+decreasing miss penalty with multilevel caches
+
+L1: unify
+L2: split
+
+increasing memory bandwidth
+
+capacity
+conflict
+compulsory
 
 
 
