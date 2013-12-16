@@ -673,3 +673,25 @@ correspondence
 
 
 
+
+12/16
+========
+Decidability
+
+correspondence with natural numbers -> countable infinite
+
+# of Turing machines is countable, but # of languages is uncountable
+
+    -> there exists some languages are Turing un-recognizable
+
+co-Turing recognizable: A language's complement is Turing recognizable
+
+is a language and its complement are both recognizable, it's decidable
+
+reduction
+
+try to make a decider by the combination of other machines
+
+
+
+
