@@ -673,3 +673,48 @@ compulsory
 
 
 
+
+12/19
+=====
+
+change to another class
+
+TBL caching is a seperated part
+
+pagefault -> the page is not in memory
+
+translation -> loopup
+
+they're handled by both hardware and software
+
+virtual address -> TLB lookup -> physical address -> miss?
+
+The TLB's backup is stored in disk, so miss penilty is high
+
+TLB is using fully associative
+
+pagetable / TLB are different
+
+TLB is in the cache
+page table is in the main memory
+
+The order of translation: TLB -> cache -> page table
+
+
+pagefault -> data must miss in cache
+
+the higher associative, the lower miss rate, but high cost on hardware
+
+LRU
+random
+
+compulsory miss (you can't avoid that) -> cold start miss
+capacity miss
+conflict miss (collision miss), related to associative
+
+
+increase cache size, associative, block size
+
+extending address range using memory segmentation
+
+
