@@ -695,3 +695,18 @@ try to make a decider by the combination of other machines
 
 
 
+12/23
+======
+
+Rice's Theorem
+
+A property of the Turing recognizable languages is simply a subset of all Turing recognizable languages
+
+A property is trivial if it is either empty or is all Turing recognizable languages
+otherwise, it is nontrivial
+
+LBA
+
+    exactly qng^n configurations
+
+
