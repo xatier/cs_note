@@ -718,3 +718,39 @@ increase cache size, associative, block size
 extending address range using memory segmentation
 
 
+
+12/23
+=====
+
+I/O system
+
+performance measures
+latency / throughput
+embedded system?
+servers
+
+
+
+
+0.5: half of rotation time
+
+seek time + rotation time
+
+ms level latency
+
+hybrid disk
+
+flash type
+    nor / nand
+
+remap / wear leveling
+
+RAID
+
+bus
+
+system bus
+I/O bus
+
+sync / async
+
