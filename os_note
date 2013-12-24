@@ -849,3 +849,22 @@ file apis
 
 locking
 
+
+12/24
+=====
+
+permission of networking filesystem
+
+file system design
+
+block allocation
+
+VFS
+
+ext4
+
+inode
+
+free-behind / read ahead
+
+
