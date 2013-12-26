@@ -754,3 +754,37 @@ I/O bus
 
 sync / async
 
+
+12/26
+=====
+
+Bus
+
+firewire / PCIe
+
+Arbitration
+Operating system
+    polling -> check if I/O commands are completed
+    interrupts
+    DMA
+
+memory mapped I/O
+    Ex. arm
+
+master / slave mode
+   request -> action
+
+special I/O instructoins
+
+busy wait loop
+
+interrupt -> save all register state
+
+DMA/cache interaction
+    dirty -> DMA update memory so cache's data are old
+    solution -> flush the cache if they'll be used for DMA
+
+RAID
+
+
+
