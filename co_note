@@ -788,3 +788,23 @@ RAID
 
 
 
+12/30
+=====
+
+multicore
+Amdahl's law
+
+ILP instruction level parallelism
+TLP thread level
+DLP data level
+
+SISD
+SIMD
+MISD
+MIMD
+
+vector processors
+
+
+
+
