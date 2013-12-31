@@ -874,3 +874,28 @@ free-behind / read ahead
 
 secondary storage
 
+
+12/31
+====
+C-SCAN
+
+C-LOOK
+
+SSTF
+
+selecting disk scheduling algorithm
+
+deadline / CFQ / no-op (FIFO)
+
+TCQ / NCQ
+tagged command queuing
+native command queuing
+
+
+disk management
+
+RAID
+
+journal log
+
+taps
