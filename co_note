@@ -807,4 +807,29 @@ vector processors
 
 
 
+1/2
+=======
+
+intel single chip cloud
+http://www.intel.com/content/www/us/en/research/intel-labs-single-chip-cloud-computer.html
+
+MPI, tile
+
+message passing
+
+the packages between tiles are passing by routers
+
+    - using the similar packet switching mechanism in networking
+
+noc -> network on chip
+
+cache coherence problem
+consistence
+
+2C4T in intel processors
+
+
+
+
+
 
