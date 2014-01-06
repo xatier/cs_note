@@ -710,3 +710,63 @@ LBA
     exactly qng^n configurations
 
 
+
+1/6
+============
+
+non-deterministric: polynomial time -> deterministic: exponential time
+
+class P
+
+    polynomial equivalent
+
+    realistically solvable
+
+
+Hamiltonian path: can be verified in polynomial time but not solvable in polynomial time
+
+no-Hamiltonian path: not polynomial time verifiable
+
+
+polynomially vaerifiable
+
+language A is an algorithm V
+where A = {w | V accepts <w,c> for some c}
+
+the runtime of V is polynomially in w
+
+|c| must be polynomially bounded by |w|
+
+c is called a certificate, proof, witness for w being in A
+
+A language is polynomially verifiable if it has a polynomially time verifier
+
+
+
+P is subset of NP
+
+NP: A language is in NP iff it is decided by some non-deterministic polynomial time Turing machine
+
+Clique is in NP
+
+proof: find a polynomial verifier or find a non-deterministic TM to solve it
+
+sumset-sum
+
+
+coNP: languages that are complements of languages in NP
+
+is coNP different from NP? we don't know yet
+
+SAT: make a boolean formula (CNF) equal to 1
+
+NP-hard + B is NP -> NP-complete
+
+
+
+
+
+
+
+
+
