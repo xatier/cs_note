@@ -832,4 +832,21 @@ consistence
 
 
 
+1/6
+=======
+
+simultaneous multithreading SMT
+
+coarse grain
+fine grain
+
+hyper threading -> SMT
+
+intel Xeon
+IBM cell
+
+intel SCC
+
+
+
 
