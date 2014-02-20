@@ -12,3 +12,59 @@ projects: 30%
 (tesxtbook)[http://aima.cs.berkeley.edu/]
 
 
+2/20
+====
+
+history of AI
+
+given a problem and some data, make an algorithm to develop some solution
+
+[Sebastian Thrun: Google's driverless car](http://www.ted.com/talks/sebastian_thrun_google_s_driverless_car.html)
+
+
+standard <-> sensors <-> feedback
+
+- [learning agents](http://en.wikipedia.org/wiki/Intelligent_agent)
+
+feedback make the system changes
+actuators is the part `act`s the model
+
+
+AI: MIT, Stanford, CMU
+
+article analysis system
+
+given a problem, we build a model to analyze that, and then prediction?
+
+start: modeling the system
+
+classify the sample to different models
+
+modeling human brain: neural network
+
+    different from a `computer`
+
+evolutionary computing
+
+[Genetic algorithms](http://en.wikipedia.org/wiki/Genetic_algorithm)
+
+represent the model as a set of gene
+
+
+feed-forward network: multi-layer structure of our brains
+
+natural language
+
+learning from examples (samples)
+
+1. missionary problem
+1. p1 p2 p3
+
+
+
+
+
+
+
+
+
