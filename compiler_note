@@ -1,0 +1,87 @@
+2/25
+====
+
+The dragon book!
+
+super computing: cooling!
+
+purple dragon: the most evil dragon
+
+project: 45%   # compiler implementation: C--
+midterm 25%
+final 25%
+quiz: 5%
+
+we have 6 check point for the project
+
+automatic translation & optimization
+
+the traditional view is a narrow view
+
+translation!
+
+silicon compiler: Ex. verilog to VLSI layout
+
+台灣芯悲劇 XD
+
+target machine mode
+    pure machine code (ISA)
+        assembly language format, relocatable binary format, load-and-go-format
+    augmented machine code (ABI)
+    bytecode(virtual machine code)
+
+P-code (Pascal)
+[wiki](http://en.wikipedia.org/wiki/P-code_machine)
+
+VISA -> virtual ISA
+
+
+two parts of compilation
+    analysis: tokenise, AST, ...
+    synthesis: codegen, optimize ...
+
+the difference between interpreter and compiler
+
+
+interpreter avoids the synthesis part but involves large overhead(time, space)
+    portable, dynamic typing
+    better diagnostics
+
+hybrid compiler / JIT
+
+a head of time / JIT (adaptive translation) -> profiling
+
+
+lexical analysis (linear analysis)
+syntax analysis (hierarchical analysis)
+semantic analysis
+
+codegen
+opt
+
+
+
+syntax directed compiler
+
+lexical analysis:  error if unrecognized token
+syntax analysis: error if can't build ASTs
+semantic analysis: type checking! insert type conversion to AST
+
+phases of a compiler
+
+six phases: lexical, syntax, semantic, IR codegen, optimizer, target codegen
+symbol table manager / error handler and recovery
+
+optimization: machine dependent optimization / machine independent optimization
+
+setroation elesmatic
+
+
+
+
+
+
+
+
+
+
