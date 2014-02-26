@@ -28,3 +28,19 @@ IDS
 mulware signature
 
 snort
+
+
+2/26
+====
+
+intrusion detection: short signature
+antivirus: long signature
+
+deep packet inspection: goto layer 7!!
+
+
+malware: collection / passive collection
+
+the architecture of botnet
+
+the differene of PC/Android mulware
