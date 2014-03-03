@@ -75,3 +75,35 @@ coloring problem
 good knowledge representation makes the problem easier
 
 
+2/27
+====
+
+machine learning
+
+brain is a massively parallel information processor of highly interconnected
+
+synapses(weights)
+
+activation function
+sigmoid function: 1/(1+e^-x)
+
+g' = g(1-g) => a normal distribution, the maximum point is 1/4
+
+take neural units as logic gates
+
+input units -> hidden units -> output units
+
+recurrent network: feedback system
+
+perceptron: a single layer feed forward neural network
+
+linear separator / hyperplane
+
+error surface
+
+perceptron learning
+
+reduce the error, update the weights (ignore tiny strength signals)
+
+
+
