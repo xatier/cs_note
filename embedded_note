@@ -17,3 +17,19 @@ IO, northbridge ...
 
 8051 system architecture
 
+2/26
+====
+
+insied the board
+
+UART, GPIO
+
+software
+
+bootloader
+
+makefile
+
+JTAG
+    joint test action group
+
