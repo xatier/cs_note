@@ -44,3 +44,47 @@ malware: collection / passive collection
 the architecture of botnet
 
 the differene of PC/Android mulware
+
+
+3/3
+====
+
+data security (authentication, encryption)
+access security (permission)
+system security
+
+VPN
+
+symmetric key
+asymmetric key
+
+
+product cipher: p-box, s-box
+
+DES
+3-des
+
+RSA
+
+digital signature
+
+message digest
+
+
+IPSec
+    Authentication header + encapsulation security payload
+    transport mode ESP / tunnel mode ESP
+
+
+SSL
+
+security electronic transaction
+
+user <-> merchant <-> payment gateway <-> bank
+
+authentication: digital signature with RSA
+
+digital envelope key exchange
+    EX. using RSA to exchange session key like DES
+
+
