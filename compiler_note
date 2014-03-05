@@ -78,10 +78,68 @@ setroation elesmatic
 
 
 
+3/4
+====
+
+review the 6 phases
+
+there's no real registeer in IR, use virtual registeer instead
+
+lexical analyis: FSA (Finite State Automata)
+codegen: Tree matching
+
+frondend / backend
+
+common backend compiling system
+    variety languages -> IR -> optimizer -> target machine codegen
+
+retargetable compiler
+    one language front-end -> IR -> machine independent optimization -> different machine codegen
+
+without IR -> N by M
+
+syntax (structure)
+semantics (meaning)
+
+syntax is usually defined by CFG (context free grammar)
+semantics: such as type compatibility, scoping rules, context-sensitive
+
+static semantics
+    attribute grammars
+runtime semantics
+    natural semantics
+    axiomatic semantics
+    denotational semantics
+
+    Ex. assertion
+
+imprecise semantics challenges
+    sometimes definitions in the specification of the language are not well defined
+    unreachable statements (control may reach end of non-void function)
 
 
 
+requirements for a successful languages
+many machines failed because they are hard to compile/optimize for
+    intel 860    IBM cell    cray-2
+
+codegen
+parsing
+code optimization
+parallelization
+
+instruction parallelism!
+
+cross compilation
 
 
 
+ch 2.
+design of a simple compiler
+
+type check!
+
+AC program char stream -> lexical analyzer -> token stream -> syntax directed translator -> DC code
+
+AC-to-DC compiler
 
