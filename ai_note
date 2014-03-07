@@ -107,3 +107,46 @@ reduce the error, update the weights (ignore tiny strength signals)
 
 
 
+
+3/6
+====
+
+examples
+  |
+  | decision tree algorithms
+  V
+decision tree (concept)
+  |
+  |
+  V
+classification
+
+
+
+** homogeneous sets
+** non-homogeneous set (can't tell things obviously)
+
+if the test is non-homogeneous, maybe we need more tests to make that homogeneous
+
+the idea is adding tests to make it homogeneous
+
+tests generally has a cost, so we fewer nodes tree is better
+
+entropy
+
+information gain -> make features more obvious
+
+overfitting issues
+
+cross validation
+
+
+
+
+nearest neighbor learning
+instance based learning
+voronoi diagram
+
+
+
+
