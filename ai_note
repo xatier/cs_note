@@ -149,4 +149,21 @@ voronoi diagram
 
 
 
+3/10
+====
+
+feature extraction
+
+
+consider the angle (as distance between neighbors)
+
+Error function
+
+give weight for each dimension
+
+but the solution may get a local optimized solution
+
+
+
+
 
