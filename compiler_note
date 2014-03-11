@@ -143,3 +143,95 @@ AC program char stream -> lexical analyzer -> token stream -> syntax directed tr
 
 AC-to-DC compiler
 
+
+
+3/11
+====
+
+my laptop ran out of power QQ
+
+tokenization
+parsing
+
+parsing tree
+    root: start sumbol
+    leaf: token or empty
+    internal node: non-terminal
+
+ambiguous
+
+grammar: can be recursive, but notice if any ambiguity
+    associative operators
+
+
+associativity
+
+<expr> -> <primary> { <op> <primary> }     Ex. A = {+ B} {+ C}
+<expr> -> { <primary> <op> } <primary>     Ex. {A = } { B =} C
+
+<expr> -> <expr> <op> <primary>  : left
+<expr> -> <primary> <op> <expr>  : right
+
+focus on what is repeating
+    op primary -> left associativ
+    primary op -> right associative
+
+
+precedence of operators
+    create two non-terminals for the two levels of precedence
+    practice: give a weight (priority) to operators, using a stack to maintain that
+    operator precedence parsing
+
+parse tree / syntax tree
+
+top down
+bottom up
+
+top down: known as predictive parsing, may need to modify productions
+bottom up: less restrictions on grammars, more commonly used in production compilers
+
+recursive descent parsing
+
+for each non-terminal has a parsing procedure
+for symbols on RHS, to match a non-terminal A, call the parsing procedure A, to match a terminal t, all math(t)
+
+lookahead
+  ll(K): need K lookaheads to determine the path (uniquely)
+  the next_token is used to determine what production to apply
+  first(alpha): grab the first token out
+
+not all CGF have the property of predictive parsing
+
+productions sharing the same LHS can be distinguished by the FIRST() set.
+with the above property is called  LL(1) grammar
+LL(1) stands for left-to-right, left-most derivation, only one lookahead token is required in predictive parsing
+
+
+try LL(1) as possible otherwise, LR parsing
+
+left recursion removal
+
+A -> Aa | b
+
+{b, ba, baa, baaa, ...}
+
+A -> bR
+R -> aR | e
+
+(e for empty)
+
+
+we need to make left recursion "right"
+
+LL -> top down
+LR -> bottom up
+
+left recursion & left factoring
+
+left recursion is good to bottom up parsing, but bad to predictive parsing
+
+
+
+
+
+
