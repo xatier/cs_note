@@ -33,3 +33,29 @@ makefile
 JTAG
     joint test action group
 
+
+3/12
+====
+
+arm architecture
+
+Cortex A-R-M series
+
+code density / performance
+
+arm instruction set
+
+microcode
+
+DBX direct bytecode execution
+
+thumb decompossor
+
+thumb2
+
+thumb to ARM mapping
+
+performance: use 32bit memory ARM code
+cost, power consumption: 16bit memory, thumb code
+
+low power and power management
