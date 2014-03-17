@@ -175,3 +175,23 @@ probability model
 EM algorithm
 
 
+3/17
+====
+
+genetic algorithm
+
+TSP
+
+中國郵便士問題
+
+mimic natural selection
+
+1. create an initial population of one chromosome
+2. mutate one or more genes, producing one new offspring for each chromosome mutated
+3. mate one or more pairs of chromosome
+4. add the mutated and offspring chromosome to the current population
+5. select a best generation and randomly pick up 2nd, 3rd
+
+genetic programming
+
+
