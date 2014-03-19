@@ -235,3 +235,45 @@ left recursion is good to bottom up parsing, but bad to predictive parsing
 
 
 
+
+3/18
+=====
+
+AST after semeantic analysis
+
+in symbol table, we always use a union to represent different types
+
+type chacking
+
+symbol reference
+
+using visitor pattern
+
+codegen in AC-DC compiler
+
+temporaries
+in real compilers, registers are typically used as temporaries
+
+
+register is not memory
+
+locality / parallelism
+
+move computation to data or move data to computation
+
+top down parsing: build the parse tree top down left to right
+recursive descent: one way to implement top-down parsing, may need to backtrack
+predictive parsing: recursive descent parsing when the CFG is LL(k), no backtracking
+
+semantic routines
+semantic records
+
+syntax directed definition: CFG + semantics routines
+(semantic attributes + semantic rules)
+
+
+source program <-char stream (maybe push back)-> lexical analyzer <-pass token, attribute value, get next-> parser
+
+
+
+
