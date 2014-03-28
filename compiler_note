@@ -277,3 +277,57 @@ source program <-char stream (maybe push back)-> lexical analyzer <-pass token, 
 
 
 
+
+3/25
+=====
+
+a fixed decimal literal
+\d?\.\d?  # wrong
+\d?\.\d+ | \d+\.\d?  # correct
+
+note '.' is illegal
+
+beware, optional type usually can't be 'all clear'
+
+A?B?            -> matches an empty string
+AB? | A?B       -> A or B must be one or more
+
+
+none regular set
+
+    Ex. no balanced / nested structure / recursion
+
+FA
+    finite automata and scanners
+
+RE -> FA
+
+
+NFA -> DFA
+    - no e-transition
+    - unique successor states
+
+
+subset construction algorithm
+
+compiler directives
+
+lexical error & recovery
+
+overlapped regular expression
+
+beware RE is greedy (longest match)
+
+
+transition table -> sparse matrix
+
+    table compression: eliminating redundant rows, pair compressed transition tables
+
+
+grouping state
+
+from RE to NFS - 3 basic operations (by Ken Thompson)
+
+
+
+
