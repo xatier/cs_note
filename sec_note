@@ -125,3 +125,22 @@ unauthorized access
 
 DNS enumeration
 
+
+3/31
+====
+
+scanning
+
+arp nmap cain
+icmp hping nping
+TCP/UDP scanning
+
+ping sweeps countermeasures
+
+snort
+
+loki2
+
+banner grabbing
+scanning available ports
+stack fingerprinting
