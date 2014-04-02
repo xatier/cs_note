@@ -330,4 +330,115 @@ from RE to NFS - 3 basic operations (by Ken Thompson)
 
 
 
+4/1
+====
 
+
+April fools day
+
+scanner generator -> parser generator
+
+why using CFG?
+    precise syntactic specification of a programming language
+    automatic efficient parser generator
+    enabling automatic translator generator
+    language extension becomes easier
+
+
+the role of the parser
+    taking tokens from scanner, parser, reporting, syntax erros
+    not just parsing, in a syntax-directed translator, the parser also conducts type checking, semantic analysis and IR codegen
+    -> the new style: multi-pass compiler (apply several passes on AST)
+
+
+Tn: non-terminal
+Tt: terminal
+
+
+
+if A -> \gamma, then \alphaA\Beta => \alpha\gamma\Beta
+
+one or more steps derivation: =>+
+zero or more steps derivation: =>*
+
+
+sentential form: some terminal and non-terminal
+
+SF(G): is the set of sentential form of grammar G
+
+what is a sentence of language L defined by the C++ grammar G?
+    a C++ program
+
+
+can 'z' be an empty string?
+
+terminal string: input program
+   can the input program accepted by the grammar?
+
+
+left-most derivation: top-down parsing is to come up with a left-most derivation
+
+right-most derivation: bottom-up parsing is to discover a right most derivation, it reverses the derivation
+
+A phrase sequence of symbols descended form a single non-terminal in the parse tree
+A simple or prime phrase is a phrase that contains no smaller phrase
+
+
+the handle of a sentential form is the left-most simple phrase
+
+if there's a handle: it's time to reduction!
+
+point: make simple phrase to non-terminal
+
+
+useless nonterminals
+reduced grammar
+    a grammar is reduced after all useless non-terminals are removes
+ambiguity
+
+
+[dangling else](http://en.wikipedia.org/wiki/Dangling_else)
+
+parser and recognizer
+
+recognizer
+   an algorithm that does boolean-valued test
+   is this input syntactically valid?
+
+parser
+answers more general questions
+is the input valid
+and, if it is, what is its structure (parse tree)
+
+handle found! -> reduce!
+
+actually, we use LR(0.5) (? in practice
+
+because LR(1) is too powerful but generates too many states
+
+in general, LL(1) or LR(1) (lookahead = 1) is enough
+
+grammar analysis algorithms
+    iterative marking algorithm
+
+Follow(A)
+First(\alpha)
+
+
+Follow(A) is the set of terminals that may follow A in some sentential form.
+It provides the lookaheads that might signal the recognition of a production with A as the left hand side
+(scan the grammar)
+
+First(\alpha)
+The set of all the terminal symbols that can begin a sentential form derivable from \alpha
+
+If \alpha is the right-hand side of a production,
+then First(\alpha) contains terminal symbols that begin strings derivable from \alpha
+
+you don't understand what is parsing lol
+
+
+
+remember the $ sign (EOF) in follow
+
+computation of predict set
