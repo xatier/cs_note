@@ -157,3 +157,13 @@ scanning
 nmap / amap
 
 nessus
+
+4/14
+====
+
+service enumeration
+
+vendor and version of software -> known vuln
+
+banner grabbing
+
