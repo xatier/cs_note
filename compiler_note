@@ -442,3 +442,75 @@ you don't understand what is parsing lol
 remember the $ sign (EOF) in follow
 
 computation of predict set
+
+
+
+4/8
+====
+
+LL(1) action symbols
+
+sementic stack != parse stack
+semantic stack is a stack of semantic records: attribute info
+actoin symbols are pushed to the parse stack
+
+LL(1) conflict
+  we do not know which production to use when we have multiple choose in one predict set
+
+  - common prefiex -> left factoring
+  - left recursion
+
+First(P): maybe contains lambda
+Predict(A->P): if there's a lambda, we need to plus Follow(A)
+
+
+PRedict(A->X1 ... Xm) = 
+    if \ in First(X1 ... Xm)
+        (First(X1 ... Xm) - \) U Follow(A)
+    else
+        First(X1 ... Xm)
+
+First(A) different from First(A->P)
+    maybe A contains multiple production
+
+
+LR parsing
+
+LR parsing is attractive
+can recognize virtually all programming language constructs
+the most general non-backtracking parsing method known
+more powerful
+efficient LR parser generators available
+
+4 actions: shift reduct error accept
+
+each state summarizes the info contains in the stack below it
+
+parsing table
+    states: the key to recognize a handle
+    goto table
+    action table
+
+
+items can ve viewed as the states of an NFA
+
+-> apply 'subset construction algorithm' to a NFA
+    "grouping" -> configuration set
+    -> items that may be applicable at a given point of parse
+
+    represents a situation in which an id can be matched as part of any of three productions
+
+    closure: states that can be reached (here, * for the dot)
+        if A -> \alpha * B \beta is in closure(l) and B -> \gamma is a production
+        then add the item B -> * \gamma to l
+        repeat until no more item can be added
+
+        note: if we have a left recursion, don't add!
+
+CFSM: characteristic FSM / collection of set of LR(0) items
+
+LR(0) parse table
+
+
+
+
