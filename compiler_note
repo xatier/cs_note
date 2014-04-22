@@ -514,3 +514,35 @@ LR(0) parse table
 
 
 
+4/22
+=====
+
+midterm review
+
+LR(1)
+
+put lookaheads to reduction rules
+
+
+powerful
+LR(0) -> SLR(0) -> LALR(1) -> LR(1)
+
+but LR(1) usually brings much larger table size, so we use LALR(1)
+
+
+semantic actions and values
+synthesized and inherited attributes
+
+each production can have an associatted code sequence that will execute when the production is applied
+
+
+parse stack / value stack
+
+parse stack is responsible for syntax analysis
+value stack is responsible for semantic analysis
+
+single pass approach would be difficult to understand, extend and maintain
+multi-pass compilation approach is to define an IR. each of the semantic analysis, program optimization, and codegen work, will be treated in separate passes. AST is such an IR
+
+
+how to build a AST
