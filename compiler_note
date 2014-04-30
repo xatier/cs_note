@@ -546,3 +546,38 @@ multi-pass compilation approach is to define an IR. each of the semantic analysi
 
 
 how to build a AST
+
+
+4/29
+====
+
+symbol table
+
+one big table (faster search)
+multiple small table (slower search)
+
+how about C++ ADL?
+
+multiple small table is good for keeping symbol tables of closed scopes
+
+name / type / var / level / hash / depth
+
+unordered list
+ordered list: bin search
+binary search tree
+hash tables
+    constant time search
+    most commonly used
+    conflicts resolution: chaning is commonly used
+
+
+name space
+
+overloading
+
+function pointer (nested functions)
+    gathering closure info and produce related code during codegen
+
+
+forward references
+
