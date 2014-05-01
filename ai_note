@@ -230,3 +230,15 @@ A* and heuristic
 consistent heuristics
 
 n-queens problem
+
+
+5/1
+====
+
+
+minimax
+
+space: dfs exploration
+
+alpha-beta purning
+
