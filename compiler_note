@@ -581,3 +581,48 @@ function pointer (nested functions)
 
 forward references
 
+
+
+5/6
+====
+
+type checking
+
+static type checking
+dynamic type checking
+
+type checking of expressions
+    work with AST
+
+type conversion
+
+implicit: coercions
+explicit: casting
+
+structurally equivalent
+name equivalent
+
+
+modern languages tends to use name equivalence rules
+type comparison is just a comparison of pointers
+programmers can get full benefit of type checking
+useful for type-inferred aliasing analysis less possible aliasing
+it's hard to implement structural equivalence
+
+
+type inferred aliasing analysis
+
+encoding the type expression
+
+value numbering
+
+common subexpression elimination
+
+
+semantic analysis
+
+
+Java exceptions rules
+
+    catch or declare rule
+
