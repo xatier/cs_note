@@ -626,3 +626,40 @@ Java exceptions rules
 
     catch or declare rule
 
+
+5/13
+========
+
+heap memory layout
+ELF
+
+compile link load
+
+active record (frame)
+
+temporaries
+    local data
+    saved machine status
+    access link (static link)
+    control link (dynamic link)
+    parameters
+    retrn value
+
+alignment
+structure size: multiple of the longest field
+
+
+stack allocation: AR layout
+
+    param
+    return address
+    old fp
+    local
+    saved reg or temps
+
+offset tracking and aligmnent
+
+
+
+
+
