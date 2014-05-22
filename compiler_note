@@ -662,4 +662,69 @@ offset tracking and aligmnent
 
 
 
+5/20
+====
+
+
+multiple scope
+
+
+non-local names/non-local reference
+
+static scoping
+lexical scoping
+
+
+static link chains
+    each stack frame contains a reference to the frame of the lexically surrounding procedure
+    by following the static links, non-local object can be found
+    also called access link
+
+dynamic link chains
+    the saved value of the frame pointer
+    which points to the caller's AR, os a dynamic link
+    non-local reference by static chain are slow
+
+
+parents call children
+    caller passes its AR pointer
+call at the same level
+    caller passes its static link
+calling ancestors
+    caller traverses static links to local the  current ancestors' AR
+
+
+displays
+    an embedding of the static chain into an array
+
+call by value/reference
+copy-restore
+
+
+codegen
+
+prologue
+save register
+push frame size
+save return address
+push down stack pointer
+epilogue
+pop things
+restore return address
+restore pc
+
+
+->old sp
+  parameter 2
+  parameter 1
+  return address
+  old fp
+  local 1
+  local 2
+
+  ...
+
+  raved reg or temps
+->stack pointer
+
 
