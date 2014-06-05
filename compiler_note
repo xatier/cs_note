@@ -728,3 +728,70 @@ restore pc
 ->stack pointer
 
 
+
+
+6/3
+====
+
+caller save registers / callee save registers
+
+caller registers are allocatd to temporaries
+    short life
+callee registers are allocated to local variables
+callee registers are allocated to cse
+    long life
+
+
+if there's no compare insturction -> use minus operation instead
+
+Ex. mips SGT (set greater than)
+
+
+use a stack for nested blocks lables
+
+use a visitor pattern
+
+
+
+boolean expressions: short circuits!
+
+
+for (i = 0; i < n; i = i+1)
+    stmt;
+
+sw $0, i
+_Test1:
+    eval expr i<n in $t1
+    beqz $1, _Lexit1
+    j _Body1
+_Inc1:
+    addi $t0, $t0, 1
+    j _Test1
+_Body1:
+    code for stmt
+    j _Inc1
+_Lexit1:
+
+
+Note: we can remove two unconditional jumps by rearrange the body and inc part
+
+sw $0, i
+_Test1:
+    exval expr i<n in $t1
+    beqz $1, _Lexit1
+    code for stmt
+    addi $t0, $t0, 1
+    j _Test1
+_Lexit1
+
+
+use left shift instead of multiple if possible
+
+(dynamic) array size [dope vector](http://en.wikipedia.org/wiki/Dope_vector)
+
+
+implementing switch -> jump table
+// also use search table or cascaded if alternatively
+
+
+
