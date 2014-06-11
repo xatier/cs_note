@@ -795,3 +795,56 @@ implementing switch -> jump table
 
 
 
+6/10
+=======
+
+Sethi-Ullman Numbering
+
+determines the minimum number of registers needed to evaluate any expresion trees
+
+
+def registerNeeds(T):
+    if T.kind == ID or T.kind == const:
+        T.regcount  = 1
+    else
+        registerNeeds(T.left)
+        registerNeeds(T.right)
+        
+        if T.left.regcount == T.right.regcount:
+            T.regcount = T.right.regcount + 1
+        else:
+            T.regcount = max(T.left.regcount, T.right.regcount)
+
+
+CSE common sub-expression
+    a cse can be allocated to a register to avaoid redundant computations
+
+tree -> DAG
+
+try to eliminate high-cost expressions like `sin(a)` or `a / b`
+
+-> different from SSA (static single assignment)
+
+Note: Sethi-Ullman numbering only can be applied on AST
+
+Register allocation
+    allocation: allocation frequently used objects to virtual registers
+        frequently used local variables, CSE, special pointers $sp, fp, $gp
+    assignment: assign unlimited virtual registers to a set of physical registers
+
+
+global allocation
+
+
+R-coloring problem
+
+instruction scheduling
+topological sorting
+    the enumeration of the nodes in which each node appears before its children
+
+
+reverse topological sort
+    find critical path
+
+
+
