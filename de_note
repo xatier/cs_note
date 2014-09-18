@@ -1,0 +1,26 @@
+9/17
+====
+
+DE is very important because we can predict the next state even if the observation time duration is very short
+
+you don't need to come up with the whole system equation, allow you to simplitfy the problem
+
+* modeling
+
+normal form if not useful
+
+we have to break equations down to some special forms we can recognize
+
+
+classification of DE by linearity
+
+f(x)
+f(ax + by) = af(x) + bf(y)  <- linearity
+
+tools for prediction
+
+linear problems are easier to solve
+and you can figure out the final answer with a combination of each sub problems
+
+
+
