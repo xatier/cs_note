@@ -23,4 +23,57 @@ linear problems are easier to solve
 and you can figure out the final answer with a combination of each sub problems
 
 
+9/22
+====
+
+solution curve
+
+explicit and implicit solutions
+
+explicit sol: A solution in which the dependent variable is expressed solely in terms of the independent variable and constants is called an explicit solution
+
+implicit sol: A relation G(x, y) = 0 is said to be an implicit solution of an ODE on an interval I provided there exists at least one function y that satisfies the relation was well as the differential equation on I
+
+
+usually, implicit solutions are good enough
+
+verification: just put variables into terms inside the equations
+
+
+
+families of solutions
+
+A solution to a 1st-order DE containing an arbitrary constant represents a set G(x, y, c) = 0 of solution if called a one-parameter family of solutions
+
+For nth-order DE, an n-parameter family of solutions can be presented as G(x, y, c1, c3, ..., cn) = 0
+If the parameters c1, c2, ..., cn are resolved, then it's called a particular solution of DE
+
+
+tech: piecewise solutions
+
+
+this particular solution cannot be obtained by a single choice of c
+
+
+Singular solution
+A singular solution is a solution that connot be obtained by specializing any of the parameters in the family of solutions
+
+
+General solutions
+
+
+
+trivial solution and singular solutoin are not the same thing
+
+initial value problem
+
+first/second order IVP
+
+
+solution by direct integration
+just integrate both sides
+
+
+fundamental theorem of calculus
+https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus
 
