@@ -1,0 +1,172 @@
+9/23
+====
+
+disassemble
+reverse assambly to C
+IDA pro
+tips for static analtisis
+
+
+
+static analysis
+  analysis malware without execution
+dynamic analysis
+  execute it
+
+what info we can get from static analysis
+  string
+  function
+  file structure: PE, ELF ...
+  related modules
+  binary code
+
+
+what we can't get
+  register, memory, packed code, encrypted message
+
+
+reverse: Linux, Windows
+pwned: Linux, Windows (rare)
+
+complement to the dynamic analysis
+
+
+
+Linux command
+  strings
+  file: filesystem, magic number, ...
+  xxd
+  ldd: print sared library dependencies
+  objdump
+    -D: disassemble
+    -R: key of sharing libs (GOT hijack)
+
+
+disassemble is a procedure to convert binary machine code into assembly code
+** may wrong
+
+linear sweep (do not understand program flow)
+    objdump
+    might not play with garbage bytes
+
+recursive traversal (try to understand program flow)
+trace special instructions like jump ...
+    might wrong if the destination of a jump is dynamic determined
+    jmp DWARD [esp]
+
+
+reverse asm to C
+EIP
+
+memory layout
+stack, heap, BSS, data
+
+local variable/arguments
+
+caller push argument into stack
+caller push eip by call instruction
+callee save/push the caller's ebp
+callee reserve save for local variables
+sub
+
+parm
+parm
+parm
+ret eip
+caller's ebp
+local
+local
+local
+
+ebp - -> local variable
+ebp + -> parameter
+
+mov
+lea
+
+arthematic instructions
+
+control instructions
+flags, test, cmp
+branch instruction
+
+stack: push/population
+call ret, ret num (esp + num)[resume space for local variables]
+
+function prologue
+store current EBP
+save ESP to current EBP
+leave sace for local variables
+
+push ebp
+mov ebp, esp
+sub esp, X
+
+
+function epilogue
+set esp to ebp
+ret
+
+
+calling convension
+stdcall, cdecl,pascal,fastcall
+fastcall: put your parameters in registers
+stdcall: put your parameters in the stack
+
+
+branch
+
+do / for loop
+
+
+
+hexray decompiler
+
+IDA pro
+
+decompiler result is not perfect
+most of time is buggy
+lack of source code level info
+
+may not support
+
+
+reversing concept
+identify important part of the program (data)
+strings: key, flags
+functions to read input: scanf(), gets()
+functions for networking: recv(), send()
+
+backward tracking user data
+most program vulns must be triggered by user input
+keep track about variables affect by your input: data propagate
+data dependency
+
+
+forward tracking interesting API functions
+strcpy(), memcp(), scanf(), printf(), strcat()
+
+try to trigger these function
+analysis control flow and make strategy to enforce program goto these functions
+
+convert back to C code
+gather info
+    IAT(import address table), strings, dynamic analysis
+    identify function of interesting
+    identify calls
+    identify algorithms and data structures
+    pseudo-code it
+    rename functions, arguments, variables
+
+
+
+encryption, self-modified code :(
+lack of runtime info :(
+take lots of time to understand programs :(
+
+overview of program flow
+
+hybrid with dynamic analysis
+
+
+
