@@ -77,3 +77,94 @@ just integrate both sides
 fundamental theorem of calculus
 https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus
 
+
+
+
+9/24
+====
+
+connecting all the slopes -> get the curve (approximately)
+
+"visualize" the solution curve
+
+lineal element
+
+slope field
+
+the collection of the lineal elements on a rectangular grid on the xy-plane is called a direction field or a slpoe field of the DE dy/dx = f(x,y)
+
+
+uniqueness of IVP solutions
+
+XXX: a family: different constant C?
+
+IVP: you have to set some initial conditions
+
+
+existence and uniqueness theorem
+
+y = y0 + integral(x0 to x) f(x, y) dx
+
+# note: this must pass through x0, y0
+
+y = y0 + integral(x0 to x) f(t, y) dt
+
+# change x to dummy variable t
+
+dy/dx = f(x, y), y(x0) = y0
+
+
+
+
+
+9/29
+====
+
+
+formulation, interpretation, mathematical analysis
+
+example: series circuit
+  Kirchhoff's second law
+
+example: F = ma
+  Newton's second law of motion
+
+
+First Order Differential Equations
+
+
+Separable Equations
+
+dy/dx = g(x) h(y) = g(x) / f(y), where f(y) = 1 / h(y)
+
+  -> like: P(x, y) = P(x) P(y) while x and y are independent
+
+
+we want f(y) = 1 / h(y) because sometimes we can have terms including ln(x) and e(x) to make them disappeared
+
+
+divide the equation above by h(y)
+
+f(y) dy / dx = g(x)
+
+note: you have to check the case where h(y) = 0, the divisors could be zero in some cases
+
+
+we can apply log properties to something like (ln x + ln y to ln xy) or (ln x - ln y to ln x/y)
+
+
+natural growth and decay models
+dx / dy = kx
+
+
+
+
+
+
+
+
+
+
+
+
+
