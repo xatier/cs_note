@@ -158,13 +158,23 @@ dx / dy = kx
 
 
 
+10/1
+====
 
+some mathematical models about differential equations
 
+linear first order DE
 
+homogeneous / non-homogeneous
 
+standard form
 
+dy/dx + P(x)y = Q(x)
 
+integrating factors
 
+the solution will come with two parts y = yc + yp
 
+yc is a vector space, yp is a normal vector for a offset from the original point
 
 
