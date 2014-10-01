@@ -170,3 +170,69 @@ hybrid with dynamic analysis
 
 
 
+
+9/30
+====
+
+dynamic analysis
+
+influence the real program
+code coverage depends on input data
+need an environment for executing the program
+
+
+ltrace
+strace
+
+windows: process monitor, process explorer
+
+valgrind
+
+check library calls with ltrace, ex. file read/write, socket events
+
+
+debugger
+
+windows:
+  windbg, ollydbg, immunity debugger, ida pro
+
+linux:
+  gdb, gdbtui, kgdb
+
+
+gdb
+  breakpoint
+    b *address if $eax = 5566
+  watch
+  enable | disable
+  delete
+  run
+  continue
+  nexti
+  stepi
+  finish
+
+set $eax = 5566
+set *0xffff5566 5566
+
+
+info registers
+info stack
+info breakpoint
+info args
+info local
+info proc map
+
+disas
+list
+display
+
+
+x/s address: examine memory as string
+
+
+memory layout
+
+text / data / bss / heap / stack
+
+GOT: global offset table
