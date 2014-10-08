@@ -236,3 +236,39 @@ memory layout
 text / data / bss / heap / stack
 
 GOT: global offset table
+
+
+
+10/7
+====
+
+reverse engineering
+
+strace/ltrace -> pseudo code -> sandbox / process monitor -> run and fuzz
+
+
+try to find... injection, overflow, race condition, logic vulnerabilities
+
+overflow
+  integer, stack, heap, off by one
+
+
+how to trigger the vuln?
+(gdb) info stack
+
+
+filter, authentication, memory permission, DEP (Data Execution Prevention), stack guard, ASLR
+
+NULL pointer kernel exploit: try to set 0x00000000 to a function first, then try to jump to it
+
+control variables: bypass some checks
+
+read / write memory
+
+control EIP
+
+
+
+
+
+
