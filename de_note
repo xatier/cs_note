@@ -178,3 +178,63 @@ the solution will come with two parts y = yc + yp
 yc is a vector space, yp is a normal vector for a offset from the original point
 
 
+
+10/6
+====
+
+variation of parameters
+
+general solution
+
+we have to transform the equations to some special forms before using these fancy skills
+
+particular solution
+
+standard form
+
+integration by parts
+
+  int( u dv ) = uv - int(vdu)
+
+dy/dx = P(x) y = Q(x)
+
+Q(x) <- internal characteristics
+
+
+
+solution by substitutions
+
+y = Beta(x, v), where v is a sub-function of f(x, y)
+
+so the key point is, how to construct the Beta function that can simplify the calculus to some very simple forms
+
+common cases of solution by substitution
+
+  - part of the DE has the form f(ax + by + c)
+  - the DE has homogeneous equation form
+  - Bernoulli equations
+
+
+homogeneous equation: if f(tx, ty) = t^a f(x, y) for some real number a, then f is a homogeneous equation of degree a
+
+M(x, y)dx + N(x, y)dy = 0
+
+Bernoulli's Equation:
+
+v = y^(1-n)
+
+dv/dx = (1-n) y^(-n) dy/dx
+
+
+
+
+total differential of a function
+
+exact differential equation
+
+
+
+
+
+
+
