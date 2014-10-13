@@ -235,6 +235,61 @@ exact differential equation
 
 
 
+10/13
+=====
+
+high order equations
+
+second order linear equations
+
+G(x, y(x), y'(x), y''(x)), where for each x belongs to I where I is the open interval of definition
+
+A(x)y'' + B(x)y' + C(x)y = F(x)
+
+assume A(x), B(x), C(x), and F(x) are continuous on the open interval I
+
+2nd order approximations are usually good enough
+
+
+start at rest : initial conditions are zero
+
+span: all possible linear combinations
+
+IVP: y = c1y1(x) + c2y2(x)  # that is a linear combination
+
+
+find the determinant of a matrix
+
+
+y'' + p(x)y' + q(x)y = 0
+
+y1 and y2 are linearly independent?
+
+    if so:  W(y1, y2) != 0 at each point of I -> y = c1y1(X) + c2y2(x) would be a general solutoin
+    if not: W(y1, y2) == 0 on I
+
+
+
+the 2nd order DE can be extended as a nth order DE (general case)
+
+all the properties can also be applied to nth order DE
+
+
+superposition principle
+existence of a unique solution
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
