@@ -283,6 +283,110 @@ the CRAX platorm
 symbolic EIP
 
 
+10/21
+=====
+
+stack overflow
+
+unsafe / safe functions
+
+
+10/28
+====
+
+memory maps
+
+  cat /proc/$pid/maps
+
+Data Execution Prevention (Non-Executable, NX protection)
+
+bypass DEP
+
+ret2text
+ret2libc
+
+ASLR (Address Space Layout Randomization)
+
+randomize stack, heap, libraries
+
+/proc/sys/kernel/randomize_va_space
+- 0: Disable ASLR.
+- 1: Randomize the positions of the stack, VDSO page, and shared memory regions
+- 2: 1 + data segment
+
+default: 2
+
+Position Independent Executable
+position-independent code
+gcc -fpie -pie test.c
+
+Conquer ASLR 
+- Information leak -> calculate needed offsets
+- fork -> same memory layout
+
+
+format strings
+
+the printf family
+
+printf, sprinf, snprinf, vsprintf, fprintf ...
+
+try some %p on input
+
+(gdb) x/20xw $esp
+
+%N$s or %N$x: leak info
+%n: returns the number of characters written so far by this call to the function.
+
+{addr} % M $ x
+{addr} % N c % M $ hhn
+
+brute force N and M
+
+M: offset
+N: value we want to write (in decimal)
+
+%100c%30$hhn%220c%31$hhn
+write 100 :(0x64) to Offset 30
+write (100 + 220) % 256 : (0x40) to Offset 31
+
+
+attacking rules:
+
+1. use %N$x to dump stack memory, the target we want to overwrite
+2. if our target is on the stack, modify it by %N$n, otherwise, try to make the address of the target appearing on stack
+3. use %Nc%N$hhn to overwrite the target
+
+
+ret2libc + fmt string exploit
+control the stack
+call printf by ret2libc
+read/write memory by fmt exploit
+try to leak more info to bypass DEP/ASLR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
