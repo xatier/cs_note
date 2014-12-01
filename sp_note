@@ -368,28 +368,28 @@ try to leak more info to bypass DEP/ASLR
 
 
 
+11/11
+=====
 
+heap exploit
 
+virtual memory, paging
 
+GOT is in .BSS
 
+doug lea's malloc implementation: control EIP after heap overflow
 
+current glibc: ptmalloc, based on dlmalloc
 
+http://g.oswego.edu/dl/html/malloc.html
 
+chunk = prev_size + size
 
+chunks are linked by a linked list structure
 
+the head of the linked list is called bin
 
+different chunk size: different bin
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+actually, chunks are continuous in memory
 

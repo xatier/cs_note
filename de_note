@@ -292,13 +292,94 @@ stupid stuffs
 
 
 
+10/29
+=====
+
+Laplace transform
+
+L{1} = 1/s
+
+L{t} = 1/s^2
+
+L{e^at} = 1 / (s - a)
+
+gamma function: generalized factorial function
+
+if x is a positive integer
+  gamma (1) = 1
+  gamma (x+1) = x!
+
+L{t^n} = n! / s^(n+1)
+
+unit stop function: like a latter
+
+
+
+
+11/3
+====
+
+L{t}
+
+inverse Laplace transformation
+
+transforming -> need to be continuous
+
+Derivative transform theorem
+
+or ... peice by piece integration
+
+integrals are included inside Laplace transform
+
+inverse of s-axis translation
+
+convolution
+
+t-axis translation theorem
+
+
+
+11/5
+====
+
+L{f(t-a)}u(t-a)} = e^(-as) F(s)
 
 
 
 
 
 
+11/17
+=====
 
+Cramer's rule
+
+try to cut equations to a linear system (a set of linear equations)
+
+the trajectory of a system's solution is called the phase plane portrait
+
+if f and g do not involve the independent variable t, the derivatives of the phase plane portrait at (x, y) can be determined uniquely the system is called autonomous system
+
+try to make a linear system and use the method of elimination to solve the system
+
+
+
+12/1
+====
+
+didn't attend the class for a long time after the midterm ...
+
+power series solution
+
+ordinary singular points
+
+well defined
+
+rewrite some terms into power series form
+
+polynomial coefficient DEs
+
+recall that a polynomial is analytic at any value x, and a rational function is analytic except at points where its denominator is zero
 
 
 
