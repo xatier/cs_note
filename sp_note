@@ -393,3 +393,129 @@ different chunk size: different bin
 
 actually, chunks are continuous in memory
 
+
+12/2
+====
+
+any place where user can control
+
+SQLi: type = number or string?
+
+
+different SQLi skills
+
+    union based
+    boolean based
+    error based
+    time based
+
+union select 1
+union select 1,2
+ ...
+
+replace 1,2,3,4 with:
+    user()
+
+cheat sheet: http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
+
+mysql comments: -- and %23
+
+
+12/9
+====
+
+error based
+
+try to make your data in the error message
+
+duplicate entry
+extract value
+big integer
+update XML
+
+time base: make a boolean condition to sleep
+
+benchmark
+heavy query
+
+
+
+
+
+12/16
+=====
+
+technique, skill, experience
+
+think about the "approach"
+
+.action -> struts 2
+
+.do -> 50% struts 2
+
+
+insecure:
+
+data -> code
+
+injection flow
+
+SQL injection, XSS, LDAP injection, XPath injection, command injection
+
+
+file base / routing base / java
+
+
+apache: xxx.php.jpg, xxx.php2, ...
+nginx: robots.txt/a.php
+IIS <6: xxx.asp;jpg
+
+check: extension, mine type, file header, file format, url pattern
+
+
+https://www.owasp.org/index.php/Session_fixation
+
+
+$string: "${@eval($_POST[ccc])}"
+
+ccc=echo `$_POST[cmd]`; &cmd=ls
+
+
+
+
+eval -> without checking the boundary
+can we overwrite last value
+
+try to dump the stack -> v1 op v2, but if there's no v2?
+
+wrapper
+
+pipe / socket
+
+socket is duplex
+
+\n, \r, \x00
+
+use the same function for I/O
+use strace to debug the wrapper
+
+
+service check
+
+debugger, emulator as wrappers?
+
+
+ld_preload
+
+don't need to patch all the time, maybe we can try to send them back with wrong information
+
+binary patching:
+esp -> argument
+ebp -> local
+
+(exchange local variables ...?
+
+
+
+
+
